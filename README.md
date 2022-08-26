@@ -10,3 +10,4 @@ Digital Asset Generators. Interesting projects on the topic of artificial intell
 
 ## Music
 * [generative.fm](https://generative.fm/)
+* [mubert](https://mubert.com/)
