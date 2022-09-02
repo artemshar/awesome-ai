@@ -1,8 +1,6 @@
-# Awesome ML
-Awesome projects with ML
+# Awesome Generative 
 
-Digital Asset Generators. Interesting projects on the topic of ML are collected here.
-
+Collected projects which generative any digital products, with ML or static algorithms
 
 ## Images
 * [MidJourney](https://www.midjourney.com)
