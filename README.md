@@ -1,12 +1,13 @@
-# Awesome AI
-Awesome projects with AI
+# Awesome ML
+Awesome projects with ML
 
-Digital Asset Generators. Interesting projects on the topic of artificial intelligence are collected here.
+Digital Asset Generators. Interesting projects on the topic of ML are collected here.
 
 
 ## Images
-* [midjourney.com](https://www.midjourney.com)
+* [MidJourney](https://www.midjourney.com)
 * [neural.love/ai-art-generator](https://neural.love/ai-art-generator)
+* [Stable Diffusion](https://github.com/CompVis/stable-diffusion)
 
 ## Music
 * [generative.fm](https://generative.fm/)
