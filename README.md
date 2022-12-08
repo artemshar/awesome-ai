@@ -1,6 +1,9 @@
-# Awesome Generative 
+# Awesome AI
 
-Collected projects which generative any digital products, with ML or static algorithms
+Collected projects which tags: AI, ML, GAN, GPT, generative art, etc.
+
+## Chatbots
+* [ChatGPT](https://openai.com/blog/chatgpt/)
 
 ## Images
 * [MidJourney](https://www.midjourney.com)
@@ -8,7 +11,6 @@ Collected projects which generative any digital products, with ML or static algo
 * [Stable Diffusion](https://github.com/CompVis/stable-diffusion)
 * [DALL-E](https://openai.com/blog/dall-e/)
 * [Lensa by Prisma AI](https://prisma-ai.com/lensa)
-
 
 ## Music
 * [generative.fm](https://generative.fm/)
