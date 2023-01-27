@@ -15,3 +15,4 @@ Collected projects which tags: AI, ML, GAN, GPT, generative art, etc.
 ## Music
 * [generative.fm](https://generative.fm/)
 * [mubert](https://mubert.com/)
+* [MusicLM](https://google-research.github.io/seanet/musiclm/examples/)
