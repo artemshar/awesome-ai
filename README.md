@@ -28,11 +28,13 @@
 🎨🧑‍💻
 
 ### Images
-* [MidJourney](https://www.midjourney.com)
-* [neural.love/ai-art-generator](https://neural.love/ai-art-generator)
-* [Stable Diffusion](https://github.com/CompVis/stable-diffusion)
-* [DALL-E](https://openai.com/blog/dall-e/)
-* [Lensa by Prisma AI](https://prisma-ai.com/lensa)
+- [MidJourney](https://www.midjourney.com)
+- [neural.love/ai-art-generator](https://neural.love/ai-art-generator)
+- [Stable Diffusion](https://github.com/CompVis/stable-diffusion)
+- [DALL-E](https://openai.com/blog/dall-e/)
+- [Lensa by Prisma AI](https://prisma-ai.com/lensa)
+- [Imagen (from Google)](https://imagen.research.google/)
+- [DragGAN](https://github.com/XingangPan/DragGAN) - Interactive Point-based Manipulation on the Generative Image Manifold
 
 ### Music
 - [generative.fm](https://generative.fm/) - 🖤
