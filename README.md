@@ -39,7 +39,13 @@
 - [mubert](https://mubert.com/) - Music Generator
 - [MusicLM](https://google-research.github.io/seanet/musiclm/examples/) - a model generating high-fidelity music from text descriptions
 - [Hydra II by Rightsify](https://rightsify.com/hydra/) - is a specialized AI music generator that creates royalty-free music for commercial use
-- [AIVA (Artificial Intelligence Virtual Artist)](https://www.aiva.ai/) - is a composition tool designed for creators, composers, and musicians who need original music for personal or professional projects.
+- [AIVA (Artificial Intelligence Virtual Artist)](https://www.aiva.ai/) - is a composition tool designed for creators, composers, and musicians who need original music for personal or professional projects
+- [Soundful](https://soundful.com/) - is an AI-powered platform designed to help creators produce royalty-free music quickly and easily
+- [Soundraw](https://soundraw.io/) - is an AI-powered music generator that empowers creators by allowing them to customize tracks to suit their specific needs
+- [Landr](https://www.landr.com/) - is an AI-based platform that offers music creation, collaboration, and distribution tools
+- [Beatoven](https://www.beatoven.ai/) - AI music generator that lets you create and customize tracks to your needs
+- [Moises AI](https://moises.ai/) - is an advanced platform designed for audio separation and music analysis. It offers tools to isolate a track’s elements, making it especially useful for remixing, practicing, and music production
+- [Uido](https://www.udio.com/) -  is a versatile music creation tool that generates and customizes high-quality music tracks using AI
 
 ### Video
 - [Sora](https://sora.com/) - for amazing results from simple prompts  
