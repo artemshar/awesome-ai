@@ -272,3 +272,9 @@
 - [KushoAI](https://kusho.ai/) — AI agent for API testing which transforms your Postman collections, OpenAPI specs, curl commands, etc. into exhaustive test suites that plug into your CI/CD pipeline.
 - [Test Gru](https://gru.ai/home#test-gru) — Provides enterprise-level unit test automation services.
 
+### API
+- [Anthropic API](https://docs.anthropic.com/en/api/messages) - Claude creators
+- [Openai API](https://platform.openai.com/docs/overview) - ChatGPT creators
+- [Google AI for Developers](https://ai.google.dev/) - Gemini creators
+- [DeepSeek API](https://api-docs.deepseek.com/) - DeepSeek creators
+
