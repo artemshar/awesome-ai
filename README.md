@@ -23,6 +23,7 @@
   - [OpenAI plugins](#openai-plugins)
   - [Search](#search)
   - [Testing](#testing)
+  - [API](#api)
 
 ## AI-Powered Creativity Tools
 🎨🧑‍💻
