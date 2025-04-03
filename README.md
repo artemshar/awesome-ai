@@ -49,6 +49,7 @@
 - [Beatoven](https://www.beatoven.ai/) - AI music generator that lets you create and customize tracks to your needs
 - [Moises AI](https://moises.ai/) - is an advanced platform designed for audio separation and music analysis. It offers tools to isolate a track’s elements, making it especially useful for remixing, practicing, and music production
 - [Uido](https://www.udio.com/) -  is a versatile music creation tool that generates and customizes high-quality music tracks using AI
+- [Suno](https://suno.com/) -Creating music using prompts
 
 ### Video
 - [Sora](https://sora.com/) - for amazing results from simple prompts  
