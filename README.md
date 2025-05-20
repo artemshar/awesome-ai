@@ -62,7 +62,8 @@
 - [Synthesia](https://www.synthesia.io/) - for using digital avatars  
 - [Vyond](https://www.vyond.com/) - for animated character videos from a prompt  
 - [revid.ai](https://www.revid.ai/) - for AI-powered templates  
-- [LTX Studio](https://ltx.studio/) - for extreme creative control  
+- [LTX Studio](https://ltx.studio/) - for extreme creative control
+- [Wan AI](https://www.wan-ai.org/) - is an advanced and powerful visual generation model, it can generate videos based on text, images and other control signals. The Wan 2.1 series models are fully open-source
 
 
 ## AI-Powered Developer Tools
