@@ -64,7 +64,7 @@
 - [revid.ai](https://www.revid.ai/) - for AI-powered templates  
 - [LTX Studio](https://ltx.studio/) - for extreme creative control
 - [Wan AI](https://www.wan-ai.org/) - is an advanced and powerful visual generation model, it can generate videos based on text, images and other control signals. The Wan 2.1 series models are fully open-source
-
+- [Veo](https://deepmind.google/models/veo/) - video generation model from Google
 
 ## AI-Powered Developer Tools
 ⚡🧑‍💻
