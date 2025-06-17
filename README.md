@@ -1,284 +1,286 @@
+---
+
 # Awesome AI
 
-- [AI-Powered Creativity Tools](#ai-powered-creativity-tools) 🎨🧑‍💻
-  - [Images](#images)
-  - [Music](#music)
-  - [Video](#video)
-- [AI-Powered Developer Tools](#ai-powered-developer-tools) ⚡🧑‍💻 fork from [jamesmurdza/awesome-ai-devtools](https://github.com/jamesmurdza/awesome-ai-devtools)
-  - [IDEs](#ides)
-  - [Git clients](#git-clients)
-  - [Assistants](#assistants)
-      - [Web-based](#web-based)
-      - [IDE extensions](#ide-extensions)
-      - [Command-line](#command-line)
-      - [Desktop](#desktop)
-  - [Shell assistants](#shell-assistants)
-  - [Agents](#agents)
-  - [PR agents](#pr-agents)
-  - [App generators](#app-generators)
-  - [UI generators](#ui-generators)
-  - [Snippet generators](#snippet-generators)
-  - [Documentation](#documentation)
-  - [Foundation models](#code-generation)
-  - [OpenAI plugins](#openai-plugins)
-  - [Search](#search)
-  - [Testing](#testing)
-  - [API](#api)
+A curated list of AI tools, platforms, and resources for developers, creators, and businesses.
 
-## AI-Powered Creativity Tools
-🎨🧑‍💻
+## Legend
 
-### Images
-- [MidJourney](https://www.midjourney.com)
-- [neural.love/ai-art-generator](https://neural.love/ai-art-generator)
-- [Stable Diffusion](https://github.com/CompVis/stable-diffusion)
-- [DALL-E](https://openai.com/blog/dall-e/)
-- [Lensa by Prisma AI](https://prisma-ai.com/lensa)
-- [Imagen (from Google)](https://imagen.research.google/)
-- [DragGAN](https://github.com/XingangPan/DragGAN) - Interactive Point-based Manipulation on the Generative Image Manifold
+- `[PRO]` - Commercial/Proprietary tool (may require payment or subscription)
+- `[OSS]` - Open Source Software (free to use, modify, and distribute)
 
-### Music
-- [generative.fm](https://generative.fm/) - 🖤
-- [mubert](https://mubert.com/) - Music Generator
-- [MusicLM](https://google-research.github.io/seanet/musiclm/examples/) - a model generating high-fidelity music from text descriptions
-- [Hydra II by Rightsify](https://rightsify.com/hydra/) - is a specialized AI music generator that creates royalty-free music for commercial use
-- [AIVA (Artificial Intelligence Virtual Artist)](https://www.aiva.ai/) - is a composition tool designed for creators, composers, and musicians who need original music for personal or professional projects
-- [Soundful](https://soundful.com/) - is an AI-powered platform designed to help creators produce royalty-free music quickly and easily
-- [Soundraw](https://soundraw.io/) - is an AI-powered music generator that empowers creators by allowing them to customize tracks to suit their specific needs
-- [Landr](https://www.landr.com/) - is an AI-based platform that offers music creation, collaboration, and distribution tools
-- [Beatoven](https://www.beatoven.ai/) - AI music generator that lets you create and customize tracks to your needs
-- [Moises AI](https://moises.ai/) - is an advanced platform designed for audio separation and music analysis. It offers tools to isolate a track’s elements, making it especially useful for remixing, practicing, and music production
-- [Uido](https://www.udio.com/) -  is a versatile music creation tool that generates and customizes high-quality music tracks using AI
-- [Suno](https://suno.com/) -Creating music using prompts
+## Table of Contents
 
-### Video
-- [Sora](https://sora.com/) - for amazing results from simple prompts  
-- [Runway](https://runwayml.com/) - for generative AI video with advanced tools  
-- [Descript](https://www.descript.com/) - for editing video by editing the script  
-- [Wondershare Filmora](https://filmora.wondershare.com/) - for polishing video with AI tools  
-- [Capsule](https://www.capsule.video/) - for simplifying video production workflows with AI  
-- [invideo AI](https://invideo.io/) - for social media videos  
-- [Peech](https://www.peech.ai/) - for content marketing teams  
-- [Synthesia](https://www.synthesia.io/) - for using digital avatars  
-- [Vyond](https://www.vyond.com/) - for animated character videos from a prompt  
-- [revid.ai](https://www.revid.ai/) - for AI-powered templates  
-- [LTX Studio](https://ltx.studio/) - for extreme creative control
-- [Wan AI](https://www.wan-ai.org/) - is an advanced and powerful visual generation model, it can generate videos based on text, images and other control signals. The Wan 2.1 series models are fully open-source
-- [Veo](https://deepmind.google/models/veo/) - video generation model from Google
+1. [AI Foundation Models & APIs](#ai-foundation-models--apis)
+2. [AI Development Tools](#ai-development-tools)
+3. [AI Application Development](#ai-application-development)
+4. [AI Creative Tools](#ai-creative-tools)
+5. [AI Business & Productivity](#ai-business--productivity)
+6. [AI Infrastructure & Operations](#ai-infrastructure--operations)
+7. [AI Research & Education](#ai-research--education)
+8. [AI Version Control & Collaboration](#ai-version-control--collaboration)
+9. [AI Code Generation & Snippets](#ai-code-generation--snippets)
+10. [AI Plugins & Integrations](#ai-plugins--integrations)
 
-## AI-Powered Developer Tools
-⚡🧑‍💻
+## AI Foundation Models & APIs
 
-### IDEs
+### Foundation Models
+- [GPT-4](https://openai.com/gpt-4) [PRO] — OpenAI's most advanced system
+- [Claude](https://www.anthropic.com/claude) [PRO] — Anthropic's AI assistant
+- [Gemini](https://deepmind.google/technologies/gemini/) [PRO] — Google's multimodal model
+- [Llama 2](https://ai.meta.com/llama/) [OSS] — Meta's open source language model
 
-- [Cursor](https://www.cursor.com/) — An IDE with chat, edit, generate and debug features. Forked from VSCodium, so the interface is similar to VS Code. Uses OpenAI.
-- [PearAI](https://trypear.ai/) — An open source fork of VS Code with chat and inline code generation.
-- [Melty](https://melty.sh/) — An open source fork of VS Code with built in chat, change previews, and ability to write commits with AI. Currently only source code is available.
-- [Replit](https://replit.com/) — Web-based IDE with cloud developer environments, code completion, chat, a software development agent and deployments.
-- [Mutable](https://github.com/mutableai/monitors4codegen) — Web-based IDE, integrated with a chatbot and GitHub.
-- [CodeStory](https://codestory.ai/) — An IDE with chat, code explanations, auto-generated commits and PR summaries. Forked from VSCodium.
-- [UI Pilot](https://ui-pilot.com/) — Chat-based AI code editor that creates forms using Material UI, using GPT-4.
-- [GitWit](https://gitwit.dev/) — Web-based editor for building ReactJS applications with AI.
-- [Windsurf](https://codeium.com/windsurf) — An IDE with chat, edit, generate and debug features. Forked from VSCodium, so the interface is similar to VS Code. Built by Codeium.
-- [Theia IDE](https://theia-ide.org/#theiaide) — An extensible open-source IDE (web and desktop) providing AI-powered features like chat, code completion, terminal assistance and custom agents using arbitrary LLMs. Built on [Theia AI](https://eclipsesource.com/blogs/2024/10/07/introducing-theia-ai/), a platform designed to enable the creation of custom, AI-powered tools and IDEs.
-- [OneCompiler](https://onecompiler.com/) — A free AI Powered online compiler supporting over 70 languages, including Java, Python, MySQL, C++, and HTML, for writing, running, and sharing code.
-- [trae](https://www.trae.ai/) - Trae is an adaptive AI IDE that transforms how you work, collaborating with you to run faster.
+### Code-Specific Models
+- [Magic LTM-1](https://magic.dev/blog/ltm-1) [PRO] — Specialized model for code generation
+- [CodeGeeX](https://codegeex.cn/) [OSS] — Code-focused language model
+- [CodeLlama](https://ai.meta.com/blog/code-llama-large-language-model-coding/) [OSS] — Code-specialized version of Llama 2
+- [StarCoder](https://huggingface.co/bigcode/starcoder) [OSS] — Open source code generation model
+- [replit-code-v1-3b](https://huggingface.co/replit/replit-code-v1-3b) [OSS] — Open source code completion model
 
-### Git Clients
+### APIs & SDKs
+- [Anthropic API](https://docs.anthropic.com/en/api/messages) [PRO] - Claude creators
+- [OpenAI API](https://platform.openai.com/docs/overview) [PRO] - ChatGPT creators
+- [Google AI for Developers](https://ai.google.dev/) [PRO] - Gemini creators
+- [DeepSeek API](https://api-docs.deepseek.com/) [PRO] - DeepSeek creators
 
-- [GitBrain](https://gitbrain.dev/) — Git client that simplifies the git workflow. Splits code changes, generates summaries & commit messages for code changes. Uses OpenAI.
-- [GitButler](https://gitbutler.com/) — Git client for simultaneous branches on top of your existing workflow. Defaults to OpenAI, can be changed to Perplexity for generating conventional commit messages.
+## AI Development Tools
 
-### Assistants
+### Integrated Development Environments (IDEs)
+- [Cursor](https://www.cursor.com/) [PRO] — AI-powered IDE with chat, edit, generate and debug features
+- [Replit](https://replit.com/) [PRO] — Web-based IDE with cloud environments and AI assistance
+- [Theia IDE](https://theia-ide.org/) [OSS] — Extensible open-source IDE with AI features
+- [trae](https://www.trae.ai/) [PRO] — Adaptive AI IDE for enhanced productivity
+- [PearAI](https://trypear.ai/) [OSS] — Open source VS Code fork with AI features
+- [Melty](https://melty.sh/) [OSS] — VS Code fork with AI-powered commits
+- [Mutable](https://github.com/mutableai/monitors4codegen) [OSS] — Web-based IDE with GitHub integration
+- [CodeStory](https://codestory.ai/) [PRO] — IDE with auto-generated commits and PR summaries
+- [UI Pilot](https://ui-pilot.com/) [PRO] — AI code editor for Material UI forms
+- [GitWit](https://gitwit.dev/) [PRO] — Web-based ReactJS editor with AI
+- [Windsurf](https://codeium.com/windsurf) [PRO] — AI-powered IDE with advanced features
+- [OneCompiler](https://onecompiler.com/) [PRO] — Multi-language online compiler with AI
 
-#### Web-based
+### Code Assistants & Copilots
+- [GitHub Copilot](https://github.com/features/copilot) [PRO] — AI pair programmer
+- [Amazon Q Developer](https://aws.amazon.com/q/developer/) [PRO] — AI coding assistant with security scanning
+- [JetBrains AI](https://www.jetbrains.com/ai/) [PRO] — AI assistant for JetBrains IDEs
+- [Codeium](https://codeium.com/) [PRO] — AI assistant with autocomplete and chat
+- [Cline](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev) [OSS] — Autonomous VS Code agent
+- [Refact AI](https://refact.ai/) [OSS] — Open source assistant with fine-tuning
+- [Continue](https://continue.dev/) [OSS] — VS Code extension with multi-file editing
+- [Blackbox AI](https://www.useblackbox.io/) [PRO] — VS Code extension with references
+- [Quack AI](https://www.quackai.com/) [PRO] — Coding guidelines assistant
+- [CodeMate](https://www.codemate.ai/) [PRO] — Debugging and optimization assistant
+- [AskCodi](https://www.askcodi.com/) [PRO] — Multi-editor coding assistant
+- [Rubberduck](https://github.com/rubberduck-ai/rubberduck-vscode) [OSS] — Open source chat assistant
+- [aiXcoder](https://www.aixcoder.com/en/) [PRO] — Multi-IDE assistant
+- [Sourcery](https://sourcery.ai/) [PRO] — AI assistant and linter
+- [Supermaven](https://supermaven.com/) [PRO] — Large context window autocomplete
+- [Android Studio Bot](https://developer.android.com/studio/preview/studio-bot) [PRO] — Android development assistant
+- [IBM watsonx Code Assistant](https://www.ibm.com/products/watsonx-code-assistant-z) [PRO] — Mainframe modernization
+- [EasyCode](https://www.easycode.ai/) [PRO] — GPT-4 powered VS Code extension
+- [Kilo Code](https://kilocode.ai) [OSS] — Open source VS Code assistant
 
-- [Replit Ghostwriter Chat](https://replit.com/site/ghostwriter) — Assistant built into [Replit](https://replit.com/) with chat, proactive debugging, and autocomplete. Uses OpenAI for chat and [replit-code-v1-3b](https://huggingface.co/replit/replit-code-v1-3b) (OS) for autocomplete.
-- [Unblocked](https://getunblocked.com/) — Augment source code with relevant existing knowledge in GitHub, Slack, Jira, Confluence, and more. Get answers through chat and IDE file-level context. Available on web, macOS, Slack, VSCode, and JetBrains IDE's.
-- [Sourcegraph Cody](https://about.sourcegraph.com/cody) — Assistant with chat, refactoring, and unit test generation. Extensions for VS Code and IntelliJ. Also available as a web app.
-- [Magnet](https://www.magnet.run/) — Web-based chatbot with repositories and issues as context.
-- [Adrenaline](https://useadrenaline.com/) — Web-based chatbot using AI and ASTs to answer questions about your codebase.
-- [CodeSquire](https://codesquire.ai/) — Chrome extension that adds autocomplete to Google Colab, BigQuery, and JupyterLab.
-- [Incognito Pilot](https://github.com/silvanmelchior/IncognitoPilot) — Open source assistant with built-in Python editor and interpreter.
-- [Onboard](https://www.getonboardai.com) — Chat with an AI about public and private codebases.
-- [Code to Flow](https://codetoflow.com) — Visualize, analyze, and understand code with interactive flowcharts.
-- [Pieces](https://pieces.app/) — An on-device copilot that helps you capture, enrich, and reuse code, streamline collaboration, and solve complex problems through a contextual understanding of your workflow.
-- [Wren AI](https://getwren.ai/oss) - SQL AI Agent to get results and insights faster by asking questions without writing SQL, and it's open-source!
-- [TEXT2SQL.AI](https://www.text2sql.ai/) — AI-powered SQL query builder. Translate, explain and fix complex SQL queries using plain English.
-- [SQLAI.ai](https://www.sqlai.ai/) — AI generates, fixes, explains and optimizes SQL queries. Ability to add your own database schema and train AI to understand it.
-- [CodeWP](https://codewp.ai/) — AI chat and coding tools specifically trained for WordPress developers. AI code generation for code snippets and plugins in WordPress.
-- [Gru.ai](https://www.gru.ai/) — An AI developer can help you solve technical problems and tackle daily coding tasks, such as building algorithms, debug issues, test solutions, answer programming questions, etc.
+### Testing & Quality Assurance
+- [OctoMind](https://octomind.dev) [PRO] — Auto-maintenance and generated end-to-end tests
+- [Carbonate](https://carbonate.dev/) [PRO] — Natural language end-to-end testing
+- [Meticulous.ai](https://www.meticulous.ai/) [PRO] — Auto-generated and maintained end-to-end tests
+- [Qodo](https://www.qodo.ai/) [PRO] — AI-powered test generation
+- [DiffBlue](https://www.diffblue.com/) [PRO] — Java unit test generation
+- [DeepUnit](https://www.deepunit.ai/) [PRO] — Unit test generation
+- [MutahunterAI](https://github.com/codeintegrity-ai/mutahunter) [OSS] — Vulnerability testing
+- [KushoAI](https://kusho.ai/) [PRO] — API testing automation
+- [Test Gru](https://gru.ai/home#test-gru) [PRO] — Enterprise test automation
 
-#### IDE extensions
+### Documentation & Knowledge Management
+- [Trelent](https://trelent.net/) [PRO] — AI-powered docstring generation
+- [DiagramGPT](https://www.eraser.io/diagramgpt) [PRO] — AI-based diagram generation
+- [DocuWriter.ai](https://www.docuwriter.ai/) [PRO] — Automated code & API documentation
+- [Swimm](https://swimm.io) [PRO] — Contextual code understanding and documentation
+- [README-AI](https://github.com/eli64s/readme-ai) [OSS] — README generator
+- [Supacodes](https://www.supacodes.com) [PRO] — GitHub documentation automation
+- [CodexAtlas](https://codedocumentation.app/) [PRO] — Automated documentation
 
-- [GitHub Copilot](https://github.com/features/copilot) — A VS Code extension with chat, pull request text generation, and unit test generation.
-- [Cline](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev) — Autonomous coding agent for VS Code that can create/edit files, execute commands, and use the browser with user permission. Supports multiple AI providers including OpenRouter, Anthropic, OpenAI, Google Gemini, AWS Bedrock, Azure, and GCP Vertex.
-- [Refact AI](https://refact.ai/) [Source](https://github.com/smallcloudai/refact) — Open source assistant with chat, completion, refactoring, and codebase-specific fine-tuning. Extensions for VS Code and JetBrains.
-- [Codeium](https://codeium.com/) — Assistant with autocomplete, natural language search and chat. Extensions for 21 editors including VS Code, JetBrains, Neovim, Vim, Emacs, Eclipse, PyCharm, and Xcode. Enterprise version includes codebase-specific fine-tuning.
-- [Continue](https://continue.dev/) — VS Code extension with chat, refactor, and code generation. Edits multiple files and runs commands on your behalf.
-- [Blackbox AI](https://www.useblackbox.io/) — VS Code extension with autocomplete and chat including links to online coding references.
-- [CodeGeeX](https://codegeex.cn/) — Open source assistant based on the CodeGeeX LLM with chat, completion, and refactoring. Extensions for 9 editors including VS Code, and PyCharm.
-- [Quack AI](https://www.quackai.com/) — VS Code extension for adhering to project coding guidelines.
-- [Tabby](https://tabbyml.github.io/tabby/) — Open source, self-hosted code completion assistant. Extensions for VS Code and Vim.
-- [Tabnine](https://www.tabnine.com/) [(Source)](https://github.com/codota/TabNine) — Open source, self-hosted code completion assistant. Extensions for 15 editors including VS Code, IntelliJ, Neovim, Eclipse, and PyCharm.
-- [CodeMate](https://www.codemate.ai/) — VS Code extension for debugging and optimizing code.
-- [AskCodi](https://www.askcodi.com/) — AI coding assistant with extensions for VS Code, JetBrains and Sublime Text.
-- [Rubberduck](https://github.com/rubberduck-ai/rubberduck-vscode) — Open source, chat assistant for the Visual Studio Code side bar.
-- [CodeComplete](https://codecomplete.ai/) — Self hosted, enterprise completion assistant.
-- [JetBrains AI](https://www.jetbrains.com/ai/) — AI assistant available in all JetBrains IDEs.
-- [aiXcoder](https://www.aixcoder.com/en/) — Local or cloud-based assistant with extensions for IntelliJ IDEA, CLion, GoLand, PyCharm, WebStorm, Visual Studio Code, and Eclipse.
-- [Sourcery](https://sourcery.ai/) — AI assistant and linter with a reference of 160 Python best practices and 40+ JS/TS best practices. Extensions for VS Code, PyCharm, vim and Sublime.
-- [Swimm](https://swimm.io) — Assistant for contextual code understanding using static analysis and AI generated documentation. VSCode, Jetbrains, IntelliJ, WebStorm, Rider, PhpStorm, Android Studio, PyCharm, PhPStorm
-- [Supermaven](https://supermaven.com/) — VS Code extension for autocomplete with 300,000-token context window.
-- [Amazon Q Developer](https://aws.amazon.com/q/developer/) — AI coding assistant with extensions for IDEs such as VS Code, IntelliJ IDEA, AWS Cloud9 and CLIs such as MacOS Terminal, iTerm2, built-in VS Code Terminal. CodeWhisperer can also scan code to highlight and define security issues. (formerly Amazon CodeWhisperer)
-- [Android Studio Bot](https://developer.android.com/studio/preview/studio-bot) — Studio Bot is an AI powered coding assistant that is tightly integrated in Android Studio. Studio Bot can help Android developers generate code, find relevant resources, learn best practices, and save time.
-- [IBM watsonx Code Assistant for Z](https://www.ibm.com/products/watsonx-code-assistant-z) — watsonx Code Assistant for Z is an AI-powered mainframe application modernization product with code generation. Features include application discovery and analysis, automated code refactoring and COBOL to Java conversion.
-- [EasyCode](https://www.easycode.ai/) — VS Code extension with GPT-4 chat.
-- [Kilo Code](https://kilocode.ai) - Open Source AI coding assistant for planning, building, and fixing code inside VS Code.
+## AI Application Development
 
-#### Command-line
+### Full-Stack App Generators
+- [Pico](https://picoapps.xyz) [PRO] — End-to-end micro app generator
+- [Co.dev](https://www.co.dev/) [PRO] — Full-stack application development platform
+- [Bolt.new](https://bolt.new) [PRO] — AI-powered web development agent
+- [Lovable](https://lovable.dev/) [PRO] — Full-stack app development platform
+- [SoftGen](https://softgen.ai/) [PRO] — Web app generation platform
+- [e2b_Fragments](https://fragments.e2b.dev/) [PRO] — AI application deployment platform
+- [Bolt.diy](https://github.com/stackblitz-labs/bolt.diy) [OSS] — Open source app generator
+- [Srcbook](https://github.com/srcbookdev/srcbook) [OSS] — TypeScript app development
+- [Literally anything](https://literallyanything.io) [PRO] — HTML/JS app generator
+- [GPT Web App Generator](https://magic-app-generator.wasp-lang.dev/) [OSS] — Full-stack app generator
+- [Make Real](https://makereal.tldraw.com/) [PRO] — HTML/JS app generator
+- [Marblism](https://marblism.com) [PRO] — SaaS boilerplate generator
+- [Glowbom](https://glowbom.com/) [PRO] — Multi-platform app generator
+- [Mage](https://usemage.ai/) [PRO] — Full-stack web app generator
+- [ScrollHub](https://hub.scroll.pub/) [PRO] — Website generator
 
-- [talk-codebase](https://github.com/rsaryev/talk-codebase) — CLI chatbot with repository as context. Supports OpenAI as well as locally running LLMs via GPT4All.
-- [gptcomet](https://github.com/belingud/gptcomet) - CLI tool to help you generate commit message and review changes. Support mutiple providers and languages.
+### UI/UX Generators
+- [v0](https://v0.dev/) [PRO] — UI component generator
+- [Galileo AI](https://www.usegalileo.ai/) [PRO] — Text-to-UI platform
+- [Uizard](https://uizard.io/) [PRO] — AI-powered UI design tool
+- [Magic Patterns](https://www.magicpatterns.com/) [PRO] — UI prototyping platform
+- [Rendition Create](https://www.renditioncreate.com/) [PRO] — UI component generator
+- [Rapidpages](https://github.com/rapidpages/rapidpages) [OSS] — Open source UI generator
+- [Tempo](https://www.tempolabs.ai/) [PRO] — React interface editor
+- [Kombai](https://kombai.com/) [PRO] — Figma to code converter
+- [CodeParrot](https://www.codeparrot.ai/) [PRO] — Figma to frontend code
+- [Frontly](https://fronty.com/) [PRO] — Image to HTML/CSS converter
+- [BoringUi](https://www.boringui.xyz/) [PRO] — JSON to UI generator
+- [Polymet](https://polymet.ai) [PRO] — Product design platform
 
-#### Desktop
+### Database & Backend Tools
+- [Wren AI](https://getwren.ai/oss) [OSS] — SQL AI Agent
+- [TEXT2SQL.AI](https://www.text2sql.ai/) [PRO] — AI-powered SQL query builder
+- [SQLAI.ai](https://www.sqlai.ai/) [PRO] — SQL query generation and optimization
+- [CodeWP](https://codewp.ai/) [PRO] — WordPress development tools
 
-- [Pieces](https://pieces.app/) — AI-enabled desktop application and browser extension designed to assist developers in enhancing productivity.
+## AI Creative Tools
 
-### Shell assistants
+### Image Generation & Editing
+- [MidJourney](https://www.midjourney.com) [PRO] — AI image generation
+- [Stable Diffusion](https://github.com/CompVis/stable-diffusion) [OSS] — Open source image generation
+- [DALL-E](https://openai.com/blog/dall-e/) [PRO] — OpenAI's image generation model
+- [DragGAN](https://github.com/XingangPan/DragGAN) [OSS] — Interactive image manipulation
+- [neural.love/ai-art-generator](https://neural.love/ai-art-generator) [PRO] — AI art generation
+- [Lensa by Prisma AI](https://prisma-ai.com/lensa) [PRO] — AI photo editing
+- [Imagen](https://imagen.research.google/) [PRO] — Google's image generation model
 
-- [AskCommand](https://www.askcommand.cppexpert.online/) — Web based tool to generate Unix commands from text automatically using AI.
-- [Butterfish](https://butterfi.sh) — CLI tool that embeds ChatGPT in your shell for easy access. Includes simple agentic capabilities.
-- [Shell Whiz](https://github.com/beimzhan/shell-whiz) — highly configurable CLI assistant to generate shell commands and get explanations for them.
-- [GitFluence](https://www.gitfluence.com/) — Web-based Git command generator to automatically generate Git commands for terminal or CLI from text description, using an AI-driven solution to suggest the most relevant Git commands.
-- [code-collator](https://github.com/tawandakembo/code-collator) — CLI tool that creates a single markdown file that describes your entire codebase to language models. Useful for AI-coding assistance from the Claude/ChatGPT web interface rather than via the API.
+### Video Creation & Editing
+- [Sora](https://sora.com/) [PRO] — AI video generation
+- [Runway](https://runwayml.com/) [PRO] — Generative AI video tools
+- [Descript](https://www.descript.com/) [PRO] — AI-powered video editing
+- [Synthesia](https://www.synthesia.io/) [PRO] — AI video generation with avatars
+- [Wondershare Filmora](https://filmora.wondershare.com/) [PRO] — Video polishing tools
+- [Capsule](https://www.capsule.video/) [PRO] — Video production workflow
+- [invideo AI](https://invideo.io/) [PRO] — Social media video creation
+- [Peech](https://www.peech.ai/) [PRO] — Content marketing tools
+- [Vyond](https://www.vyond.com/) [PRO] — Animated video generation
+- [revid.ai](https://www.revid.ai/) [PRO] — Video templates
+- [LTX Studio](https://ltx.studio/) [PRO] — Creative control tools
+- [Wan AI](https://www.wan-ai.org/) [OSS] — Open source video generation
+- [Veo](https://deepmind.google/models/veo/) [PRO] — Google's video generation model
 
-### Agents
+### Audio & Music Generation
+- [MusicLM](https://google-research.github.io/seanet/musiclm/examples/) [PRO] — High-fidelity music generation
+- [AIVA](https://www.aiva.ai/) [PRO] — AI music composition
+- [Soundful](https://soundful.com/) [PRO] — Royalty-free music generation
+- [Moises AI](https://moises.ai/) [PRO] — Audio separation and analysis
+- [generative.fm](https://generative.fm/) [OSS] — Generative music
+- [mubert](https://mubert.com/) [PRO] — Music generator
+- [Hydra II](https://rightsify.com/hydra/) [PRO] — Commercial music generator
+- [Soundraw](https://soundraw.io/) [PRO] — Customizable music generator
+- [Landr](https://www.landr.com/) [PRO] — Music creation and distribution
+- [Beatoven](https://www.beatoven.ai/) [PRO] — Customizable music generator
+- [Uido](https://www.udio.com/) [PRO] — Music creation tool
+- [Suno](https://suno.com/) [PRO] — Prompt-based music creation
 
-- [Smol Developer](https://github.com/smol-ai/developer) — CLI agent that generates a repository from a prompt. Uses OpenAI and Anthropic.
-- [Aider](https://github.com/paul-gauthier/aider) — CLI assistant and agent that generates changes and commits to repositories. Uses OpenAI.
-- [Blinky](https://github.com/seahyinghang8/blinky) — A debugging agent for VS Code that helps to identify and fix backend errors, inspired by SWE-agent.
-- [Mentat](https://www.mentat.ai/) — CLI assistant and agent that makes changes to repositories.
-- [GPT Engineer](https://github.com/AntonOsika/gpt-engineer) — CLI agent that generates a repository from a prompt, and asks clarifying questions.
-- [GPT Migrate](https://github.com/0xpayne/gpt-migrate) — CLI agent that converts a full-stack application from one language or framework to another. Uses GPT-4 32k context.
-- [Grit](https://app.grit.io) — GitHub-integrated agent for automating maintenance tasks and other development work.
-- [DemoGPT](https://github.com/melih-unsal/DemoGPT) — Auto Gen-AI App Generator with the Power of Llama 2
-- [DevOpsGPT](https://github.com/kuafuai/DevOpsGPT) — DevOpsGPT: AI-Driven Software Development Automation Solution
-- [Second.dev](https://www.second.dev/) — A platform for adding features to full-stack apps.
-- [Factory](https://www.factory.ai/) — Agents for code generation. Waitlisted.
-- [sudocode](https://sudocode.ai/) — A web based chat assistant for generating projects, similar to Code Interpreter.
-- [CodeFlash AI](https://www.codeflash.ai/) — A CLI and CI tool for optimizing Python code using AI.
-- [Micro Agent by Builder](https://www.builder.io/blog/micro-agent) — An AI agent that writes and fixes code for you.
-- [Fine](https://fine.dev/?ref=awesome) — AI Dev Environment for automating mundane work. Integrate GitHub, Sentry, Linear. Get context-aware answers to questions. Plan, design and implement changes. Automate self-healing CI/CD.
-- [Potpie](https://potpie.ai) — Open Source AI Agents for your codebase in minutes. Use pre-built agents for Q&A, Testing, Debugging and System Design or create your own purpose-built agents.
+## AI Business & Productivity
 
-### PR agents
+### Content Generation
+- [Peech](https://www.peech.ai/) [PRO] — AI content marketing tools
+- [invideo AI](https://invideo.io/) [PRO] — Social media video creation
+- [Vyond](https://www.vyond.com/) [PRO] — Animated video generation
 
-- [Greptile](https://greptile.com/code-review-bot) - AI bot that reviews PRs in GitHub/Gitlab with full context of the codebase.
-- [EntelligenceAI](https://entelligence.ai/pr) - AI powered code reviews for Github and Gitlab that improves over time based on user comments
-- [Sweep](https://github.com/sweepai/sweep) — AI junior dev: GitHub integration to generate, test, and self-review pull requests from issues.
-- [Codegen](https://www.codegen.com/) — GPT-4 based PR agent for enterprise codebases.
-- [Code Review GPT](https://github.com/mattzcarey/code-review-gpt) — An open source tool for reviewing PRs. Works as GitHub action, Gitlab CLI or locally.
-- [Codeium PR Agent](https://github.com/Codium-ai/pr-agent) — Open source tool for automated code reviews.
-- [Nova](https://www.trynova.ai/) — CI bot to add actions such as summaries and tests to new PRs.
-- [CodeRabbit](https://coderabbit.ai/) — Customizable CI to add summaries and code suggestions to PRs.
-- [SwePT](https://github.com/keerthanpg/SwePT) — Open source PR generator written in 150 lines of Python code.
-- [Duckie](https://duckie.ai/) — A web based chat assistant for modifying GitHub repositories.
-- [PR Explainer Bot](https://pr-explainer-bot.web.app/) — A GitHub integration that adds explanatory text to newly created PRs.
-- [Goast](https://goast.ai/) — A hosted tool that ingests your error logs and suggests fixes.
-- [Corgea](https://corgea.com/) — A GitHub integration that finds and fixes vulnerable code.
-- [vx.dev](https://github.com/Yuyz0112/vx.dev) — A GitHub integration focused on UI generation with built in support for shadcn, lucide, and nivo charts.
-- [Pixee](https://pixee.ai) — Pixeebot finds security and code quality issues in your code and creates merge-ready pull requests with recommended fixes.
-- [CodeAnt AI](https://www.codeant.ai/) — Automatically create PRs to fix code issues.
-- [What The Diff](https://whatthediff.ai/) — AI-powered app that reviews the diff of pull requests and writes a descriptive comment about the changes in plain english.
-- [Trag](https://usetrag.com/) — AI powered code reviews with pre-defined instructions and patterns.
-- [CodeReviewBot](https://codereviewbot.ai/) — AI powered code reviews for GitHub
-- [Callstack.ai Code Reviewer](https://callstack.ai/code-reviewer) — AI-powered PR reviewer for GitHub, designed to identify bugs, security issues, and performance bottlenecks.
+### Project Management
+- [Unblocked](https://getunblocked.com/) [PRO] — Knowledge management and collaboration
+- [Fine](https://fine.dev/) [PRO] — AI-powered development workflow
+- [Grit](https://app.grit.io) [PRO] — GitHub-integrated maintenance automation
 
-### App generators
+## AI Infrastructure & Operations
 
-- [Pico](https://picoapps.xyz) — End-to-end micro app generator with instant deployment.
-- [Co.dev](https://www.co.dev/) — AI-powered app development platform that helps build and deploy full-stack applications.
-- [SoftGen](https://softgen.ai/) — AI-powered software generation platform for building Web Apps.
-- [LlamaCoder](https://llamacoder.together.ai/) — Open source code generation model for building applications using Opensource LLMs.
-- [e2b_Fragments](https://fragments.e2b.dev/) — Platform for building and deploying AI-powered applications with sandboxed environments.
-- [Bolt.new](https://bolt.new) — AI-powered web development agent that allows you to prompt, run, edit, and deploy full-stack applications directly in the browser using WebContainers. Supports npm packages, Node.js servers, and third-party APIs.
-- [Bolt.diy](https://github.com/stackblitz-labs/bolt.diy) — Open source version of Bolt.new that supports multiple LLM providers including Groq, Anthropic, Ollama, OpenRouter, Gemini, LMStudio, Mistral, xAI, HuggingFace, DeepSeek
-- [Srcbook](https://github.com/srcbookdev/srcbook) — TypeScript-centric app development platform with an AI app builder and TypeScript notebook.
-- [Lovable](https://lovable.dev/) — AI-powered full-stack app development platform that converts natural language descriptions or designs into fully functional applications with built-in deployment and GitHub integration.
-- [Literally anything](https://literallyanything.io) — HTML and JavaScript web app generator.
-- [GPT Web App Generator](https://magic-app-generator.wasp-lang.dev/) — Generates a full-stack React/Node.js/Prisma/Wasp app from a short description.
-- [Make Real](https://makereal.tldraw.com/) — Online canvas that can be used to generate HTML/JavaScript apps.
-- [Marblism](https://marblism.com) — Generate a SaaS boilerplate from a prompt.
-- [Glowbom](https://glowbom.com/) — Generate apps with AI and export to multiple platforms.
-- [Mage](https://usemage.ai/) — Generate full-stack web apps in Wasp, React, Node.js and Prisma.
-- [ScrollHub](https://hub.scroll.pub/) — Generate and publish websites using the Scroll programming language.
+### Model Serving & Deployment
+- [e2b_Fragments](https://fragments.e2b.dev/) [PRO] — AI application deployment platform
+- [Tabby](https://tabbyml.github.io/tabby/) [OSS] — Self-hosted code completion
+- [CodeComplete](https://codecomplete.ai/) [PRO] — Enterprise completion assistant
 
-### UI generators
+### Security & Compliance
+- [Pixee](https://pixee.ai) [PRO] — Security and code quality automation
+- [Corgea](https://corgea.com/) [PRO] — Vulnerability detection and fixing
+- [Amazon Q Developer](https://aws.amazon.com/q/developer/) [PRO] — Security scanning
 
-- [v0](https://v0.dev/) — Create and iterate new UI components in your browser.
-- [Rendition Create ](https://www.renditioncreate.com/) — Create and iterate new UI components in your browser.
-- [Rapidpages](https://github.com/rapidpages/rapidpages) — Open source UI generator.
-- [Magic Patterns](https://www.magicpatterns.com/) — Protoype your product ideas. UI generator website where you can prompt, upload images, or import design inspiration with their [Chrome Extension](https://www.magicpatterns.com/extension). Can export to Figma with a [plugin](https://www.figma.com/community/plugin/1304255855834420274). Supports a number of component systems including Shadcn, ChakraUI, and HTML + Tailwind.
-- [Tempo ](https://www.tempolabs.ai/) — WYSIWYG editor for React interfaces.
-- [Kombai](https://kombai.com/) — AI Tool for generating frontend code from Figma.
-- [CodeParrot](https://www.codeparrot.ai/) — VS code plugin to generate Frontend code from Figma. Reuses existing components, libraries and coding standards to generate code which fits perfectly with your existing codebase. All without any prompting.
-- [Galileo AI](https://www.usegalileo.ai/) — A text-to-UI platform. Waitlist.
-- [Uizard](https://uizard.io/) — Generate multi-screen mockups from text prompts and edit them with a drag-and-drop editor. Scan screenshots of apps or hand-drawn wireframes and transform them into editable app mockups.
-- [Frontly](https://fronty.com/) — Convert the uploaded image to HTML CSS code.
-- [BoringUi](https://www.boringui.xyz/) — Create beautiful UI using your JSON data. The generated UI is in HTML and Tailwind CSS with code which can be copied and UI can be shared with anyone using links.
-- [Polymet](https://polymet.ai) — Create and iterate product design easily. Polymet helps teams create user interfaces and prototypes without any design experience, provides production-ready front-end code.
+## AI Research & Education
 
-### Snippet generators
+### Research Tools
+- [SeaGOAT](https://kantord.github.io/SeaGOAT/latest/) [OSS] — Semantic code search
+- [Bloop](https://bloop.ai/) [PRO] — Natural language repository search
+- [Buildt](https://www.buildt.ai/) [PRO] — Code search and analysis
 
-- [CodePal](https://codepal.ai/) — A web tool for quickly generating or refactoring code.
-- [AI Code Convert](https://aicodeconvert.com/) — A web tool for translating code between programming languages.
-- [AI Code Playground](https://aicodeplayground.com/) — A web tool for refactoring and improving code.
-- [AutoRegex](https://www.autoregex.xyz/) — AutoRegex uses OpenAI's GPT-3 to produce regular expressions from plain English.
+### Experimentation Tools
+- [DemoGPT](https://github.com/melih-unsal/DemoGPT) [OSS] — Auto Gen-AI App Generator
+- [DevOpsGPT](https://github.com/kuafuai/DevOpsGPT) [OSS] — AI-Driven Development Automation
+- [Potpie](https://potpie.ai) [OSS] — Open Source AI Agents
 
-### Documentation
+## AI Version Control & Collaboration
 
-- [Trelent](https://trelent.net/) — A VS Code extension to generate docstrings. Uses proprietary models.
-- [DiagramGPT](https://www.eraser.io/diagramgpt) — DiagramGPT is a free AI-based web app that converts a schema, infrastructure definition, code snippet or plain language description into diagrams. The tool can generate flow charts, entity relationship diagrams, cloud architecture diagrams and sequence diagrams.
-- [DocuWriter.ai](https://www.docuwriter.ai/) — AI-powered web app to generate automated Code & API documentation from your source code files.
-- [README-AI](https://github.com/eli64s/readme-ai) — Automated README.md file generator, powered by large language model APIs.
-- [Supacodes](https://www.supacodes.com) — An AI tool that automates writing & updating code documentation in Github
-- [CodexAtlas](https://codedocumentation.app/) — Automated code and API documentation using latest AI models
+### Git Clients & Tools
+- [GitBrain](https://gitbrain.dev/) [PRO] — AI-powered Git workflow
+- [GitButler](https://gitbutler.com/) [PRO] — Multi-branch Git client
+- [GitFluence](https://www.gitfluence.com/) [PRO] — Git command generator
 
-### Code generation
+### PR & Code Review
+- [Greptile](https://greptile.com/code-review-bot) [PRO] — AI PR reviewer
+- [EntelligenceAI](https://entelligence.ai/pr) [PRO] — AI code reviews
+- [Sweep](https://github.com/sweepai/sweep) [OSS] — AI junior dev
+- [Code Review GPT](https://github.com/mattzcarey/code-review-gpt) [OSS] — Open source PR reviewer
+- [Codeium PR Agent](https://github.com/Codium-ai/pr-agent) [OSS] — Automated code reviews
+- [Nova](https://www.trynova.ai/) [PRO] — CI bot for PRs
+- [CodeRabbit](https://coderabbit.ai/) [PRO] — PR summaries and suggestions
+- [SwePT](https://github.com/keerthanpg/SwePT) [OSS] — PR generator
+- [Duckie](https://duckie.ai/) [PRO] — Repository modification assistant
+- [PR Explainer Bot](https://pr-explainer-bot.web.app/) [OSS] — PR explanation generator
+- [Goast](https://goast.ai/) [PRO] — Error log analyzer
+- [vx.dev](https://github.com/Yuyz0112/vx.dev) [OSS] — UI generation for PRs
+- [CodeAnt AI](https://www.codeant.ai/) [PRO] — Automated PR creation
+- [What The Diff](https://whatthediff.ai/) [PRO] — PR diff analyzer
+- [Trag](https://usetrag.com/) [PRO] — Code review patterns
+- [CodeReviewBot](https://codereviewbot.ai/) [PRO] — GitHub code reviews
+- [Callstack.ai Code Reviewer](https://callstack.ai/code-reviewer) [PRO] — PR reviewer
 
-- [Magic](https://magic.dev/) — Company promising two products, an assistant and [LTM-1](https://magic.dev/blog/ltm-1), an underlying foundation model trained on code. Waitlist.
-- [Poolside](https://poolside.ai/) — Company building code generation models through reinforcement learning.
-- [Visual Copilot](https://www.builder.io/m/design-to-code) — Figma plugin that converts designs into clean, responsive code for multiple frameworks and CSS libraries.
-- [LlamaCoder](https://llamacoder.together.ai/) — Open source code generation model fine-tuned on code.
+## AI Code Generation & Snippets
 
-### OpenAI plugins
+### Code Generators
+- [CodePal](https://codepal.ai/) [PRO] — Code generation and refactoring
+- [AI Code Convert](https://aicodeconvert.com/) [PRO] — Code translation
+- [AI Code Playground](https://aicodeplayground.com/) [PRO] — Code improvement
+- [AutoRegex](https://www.autoregex.xyz/) [PRO] — Regex generation
 
-- [ChatWithGit](https://gitsearch.sdan.io/) — Enables ChatGPT to search GitHub and return links to relevant repositories.
-- [Code ChatGPT Plugin](https://github.com/kesor/chatgpt-code-plugin) — Open source example of a ChatGPT plugin that pulls context from a directory of files.
+### Shell & CLI Tools
+- [AskCommand](https://www.askcommand.cppexpert.online/) [PRO] — Unix command generator
+- [Butterfish](https://butterfi.sh) [OSS] — Shell ChatGPT integration
+- [Shell Whiz](https://github.com/beimzhan/shell-whiz) [OSS] — Shell command assistant
+- [talk-codebase](https://github.com/rsaryev/talk-codebase) [OSS] — CLI chatbot
+- [gptcomet](https://github.com/belingud/gptcomet) [OSS] — Commit message generator
+- [code-collator](https://github.com/tawandakembo/code-collator) [OSS] — Codebase documentation
 
-### Search
+## AI Plugins & Integrations
 
-- [Bloop](https://bloop.ai/) — Natural language search for repositories.
-- [Buildt](https://www.buildt.ai/) — Natural language search for repositories. Waitlist.
-- [SeaGOAT](https://kantord.github.io/SeaGOAT/latest/) — A local search tool leveraging vector embeddings to search your codebase semantically.
+### OpenAI Plugins
+- [ChatWithGit](https://gitsearch.sdan.io/) [OSS] — GitHub search plugin
+- [Code ChatGPT Plugin](https://github.com/kesor/chatgpt-code-plugin) [OSS] — Code context plugin
 
-### Testing
+### Development Agents
+- [Smol Developer](https://github.com/smol-ai/developer) [OSS] — Repository generator
+- [Aider](https://github.com/paul-gauthier/aider) [OSS] — Repository modification
+- [Blinky](https://github.com/seahyinghang8/blinky) [OSS] — Debugging agent
+- [Mentat](https://www.mentat.ai/) [PRO] — Repository modification
+- [GPT Engineer](https://github.com/AntonOsika/gpt-engineer) [OSS] — Repository generator
+- [GPT Migrate](https://github.com/0xpayne/gpt-migrate) [OSS] — Code migration
+- [Second.dev](https://www.second.dev/) [PRO] — Feature addition
+- [Factory](https://www.factory.ai/) [PRO] — Code generation
+- [sudocode](https://sudocode.ai/) [PRO] — Project generator
+- [CodeFlash AI](https://www.codeflash.ai/) [PRO] — Python optimization
+- [Micro Agent by Builder](https://www.builder.io/blog/micro-agent) [PRO] — Code writing agent
 
-- [OctoMind](https://octomind.dev) — Auto-maintenance and generated browser-based end-to-end-tests integrated into Github Actions, Azure DevOps and more.
-- [Traceloop](https://traceloop.com/) — Uses OpenTelemetry tracing data with generative AI to improve system reliability.
-- [Carbonate](https://carbonate.dev/) — End-to-end testing using natural language. Integrates into your existing test suite (currently Jest, PHPUnit and Python's unittest).
-- [Meticulous.ai](https://www.meticulous.ai/) — Automatically generated, automatically maintained end-to-end tests: as your app evolves so does your test suite.
-- [DiffBlue](https://www.diffblue.com/) — Automatically generated unit tests for Java.
-- [Qodo](https://www.qodo.ai/) — Non-trivial test generation with support for major programming languages. Extensions for VS Code and JetBrains. (formerly Codium)
-- [DeepUnit](https://www.deepunit.ai/) — Thoughtful test cases and generation of complete unit test files. Available as an interactive VS Code extension, npm package, CLI or CI/CD pipeline.
-- [MutahunterAI](https://github.com/codeintegrity-ai/mutahunter) — Accelerate developer productivity and code security by finding vulnerabilities in code and generating tests for them. Open Source and available as a CLI or CI/CD pipeline.
-- [KushoAI](https://kusho.ai/) — AI agent for API testing which transforms your Postman collections, OpenAPI specs, curl commands, etc. into exhaustive test suites that plug into your CI/CD pipeline.
-- [Test Gru](https://gru.ai/home#test-gru) — Provides enterprise-level unit test automation services.
+## Contributing
 
-### API
-- [Anthropic API](https://docs.anthropic.com/en/api/messages) - Claude creators
-- [Openai API](https://platform.openai.com/docs/overview) - ChatGPT creators
-- [Google AI for Developers](https://ai.google.dev/) - Gemini creators
-- [DeepSeek API](https://api-docs.deepseek.com/) - DeepSeek creators
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
 
