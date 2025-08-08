@@ -118,6 +118,7 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [Glowbom](https://glowbom.com/) [PRO] — Multi-platform app generator
 - [Mage](https://usemage.ai/) [PRO] — Full-stack web app generator
 - [ScrollHub](https://hub.scroll.pub/) [PRO] — Website generator
+- [Kineto](https://blog.jetbrains.com/kineto/2025/08/make-your-ideas-clickable-with-kineto-by-jetbrains/) [PRO] — GPT-5 based platform by JetBrains that helps create, deploy, and maintain ready-to-use websites and apps (waitlist)
 
 ### UI/UX Generators
 - [v0](https://v0.dev/) [PRO] — UI component generator
