@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkawesome_ai=self.webpackChunkawesome_ai||[]).push([[714],{1564:e=>{e.exports=JSON.parse('{"tags":[{"label":"AI","permalink":"/awesome-ai/blog/tags/ai","description":"AI tag description","count":2}]}')}}]);

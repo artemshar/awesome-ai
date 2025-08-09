@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkawesome_ai=self.webpackChunkawesome_ai||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Hello! How are you?","permalink":"/awesome-ai/blog/hello","unlisted":false,"date":"2025-08-10T00:00:00.000Z"}]}')}}]);
