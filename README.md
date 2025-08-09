@@ -41,7 +41,7 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [Anthropic API](https://docs.anthropic.com/en/api/messages) [PRO] - Claude creators
 - [OpenAI API](https://platform.openai.com/docs/overview) [PRO] - ChatGPT creators
 - [Google AI for Developers](https://ai.google.dev/) [PRO] - Gemini creators
-- [DeepSeek API](https://api-docs.deepseek.com/) [PRO] - DeepSeek creators
+- [DeepSeek](https://api-docs.deepseek.com/) [OSS] - DeepSeek creators
 
 ## AI Development Tools
 
@@ -52,7 +52,6 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [trae](https://www.trae.ai/) [PRO] — Adaptive AI IDE for enhanced productivity
 - [PearAI](https://trypear.ai/) [OSS] — Open source VS Code fork with AI features
 - [Melty](https://melty.sh/) [OSS] — VS Code fork with AI-powered commits
-- [Mutable](https://github.com/mutableai/monitors4codegen) [OSS] — Web-based IDE with GitHub integration
 - [CodeStory](https://codestory.ai/) [PRO] — IDE with auto-generated commits and PR summaries
 - [UI Pilot](https://ui-pilot.com/) [PRO] — AI code editor for Material UI forms
 - [GitWit](https://gitwit.dev/) [PRO] — Web-based ReactJS editor with AI
@@ -117,7 +116,7 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [Marblism](https://marblism.com) [PRO] — SaaS boilerplate generator
 - [Glowbom](https://glowbom.com/) [PRO] — Multi-platform app generator
 - [Mage](https://usemage.ai/) [PRO] — Full-stack web app generator
-- [ScrollHub](https://hub.scroll.pub/) [PRO] — Website generator
+- [ScrollHub](https://github.com/breck7/ScrollHub) [OSS] — Website generator
 - [Kineto](https://blog.jetbrains.com/kineto/2025/08/make-your-ideas-clickable-with-kineto-by-jetbrains/) [PRO] — GPT-5 based platform by JetBrains that helps create, deploy, and maintain ready-to-use websites and apps (waitlist)
 
 ### UI/UX Generators
@@ -183,7 +182,7 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 ## AI Business & Productivity
 
 ### Content Generation
-- [Peech](https://www.peech.ai/) [PRO] — AI content marketing tools
+- [Peech](https://www.peech-ai.com) [PRO] — AI content marketing tools
 - [invideo AI](https://invideo.io/) [PRO] — Social media video creation
 - [Vyond](https://www.vyond.com/) [PRO] — Animated video generation
 
