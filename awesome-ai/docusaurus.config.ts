@@ -15,15 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://awesome-ai.artemshar.github.io',
+  url: 'https://artemshar.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/awesome-ai/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'artemshar', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'awesome-ai', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -35,6 +35,9 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  // Add trailing slash for better GitHub Pages compatibility
+  trailingSlash: true,
 
   presets: [
     [
