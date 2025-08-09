@@ -1,9 +1,3 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
 import {useCallback, useMemo} from 'react';
 import {translate} from '@docusaurus/Translate';
 import {
@@ -34,45 +28,45 @@ export function useOperator() {
   return [operator, toggleOperator] as const;
 }
 
-function filterUsers({
-  users,
+function filterProjects({
+  projects,
   tags,
   operator,
   searchName,
 }: {
-  users: AwesomeAI[];
+  projects: AwesomeAI[];
   tags: TagType[];
   operator: Operator;
   searchName: string | null;
 }) {
   if (searchName) {
     // eslint-disable-next-line no-param-reassign
-    users = users.filter((user) =>
-      user.title.toLowerCase().includes(searchName.toLowerCase()),
+    projects = projects.filter((project) =>
+      project.title.toLowerCase().includes(searchName.toLowerCase()),
     );
   }
   if (tags.length === 0) {
-    return users;
+    return projects;
   }
-  return users.filter((user) => {
-    if (user.tags.length === 0) {
+  return projects.filter((project) => {
+    if (project.tags.length === 0) {
       return false;
     }
     if (operator === 'AND') {
-      return tags.every((tag) => user.tags.includes(tag));
+      return tags.every((tag) => project.tags.includes(tag));
     }
-    return tags.some((tag) => user.tags.includes(tag));
+    return tags.some((tag) => project.tags.includes(tag));
   });
 }
 
-export function useFilteredUsers() {
+export function useFilteredProjects() {
   const [tags] = useTags();
   const [searchName] = useSearchName();
   const [operator] = useOperator();
   return useMemo(
     () =>
-      filterUsers({
-        users: sortedAwesomeAI,
+      filterProjects({
+        projects: sortedAwesomeAI,
         tags: tags as TagType[],
         operator,
         searchName,
@@ -83,17 +77,17 @@ export function useFilteredUsers() {
 
 export function useSiteCountPlural() {
   const {selectMessage} = usePluralForm();
-  return (sitesCount: number) =>
+  return (projectsCount: number) =>
     selectMessage(
-      sitesCount,
+      projectsCount,
       translate(
         {
           id: 'showcase.filters.resultCount',
           description:
-            'Pluralized label for the number of sites found on the showcase. Use as much plural forms (separated by "|") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)',
-          message: '1 site|{sitesCount} sites',
+            'Pluralized label for the number of items found on the showcase. Use as much plural forms (separated by "|") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)',
+          message: '1 project|{projectsCount} projects',
         },
-        {sitesCount},
+        {projectsCount},
       ),
     );
 }

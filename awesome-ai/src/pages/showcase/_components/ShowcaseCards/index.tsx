@@ -12,15 +12,15 @@ import {sortedAwesomeAI, type AwesomeAI} from '@site/src/data/awesome-ai-list';
 import Heading from '@theme/Heading';
 import FavoriteIcon from '../FavoriteIcon';
 import ShowcaseCard from '../ShowcaseCard';
-import {useFilteredUsers} from '../../_utils';
+import {useFilteredProjects} from '../../_utils';
 
 import styles from './styles.module.css';
 
-const favoriteUsers = sortedAwesomeAI.filter((awesomeAI) =>
+const favoriteProjects = sortedAwesomeAI.filter((awesomeAI) =>
   awesomeAI.tags.includes('favorite'),
 );
 
-const otherUsers = sortedAwesomeAI.filter(
+const otherProjects = sortedAwesomeAI.filter(
   (awesomeAI) => !awesomeAI.tags.includes('favorite'),
 );
 
@@ -41,10 +41,10 @@ function HeadingFavorites() {
   );
 }
 
-function HeadingAllSites() {
+function HeadingAllProjects() {
   return (
     <Heading as="h2">
-      <Translate id="showcase.usersList.allUsers">All sites</Translate>
+      <Translate id="showcase.usersList.allProjects">All projects</Translate>
     </Heading>
   );
 }
@@ -73,25 +73,25 @@ function NoResultSection() {
 }
 
 export default function ShowcaseCards() {
-  const filteredUsers = useFilteredUsers();
+  const filteredProjects = useFilteredProjects();
 
-  if (filteredUsers.length === 0) {
+  if (filteredProjects.length === 0) {
     return <NoResultSection />;
   }
 
   return (
     <section className="margin-top--lg margin-bottom--xl">
-      {filteredUsers.length === sortedAwesomeAI.length ? (
+      {filteredProjects.length === sortedAwesomeAI.length ? (
         <>
-          <div className={styles.showcaseFavorite}>
-            <CardList heading={<HeadingFavorites />} items={favoriteUsers} />
-          </div>
+          {/* <div className={styles.showcaseFavorite}>
+            <CardList heading={<HeadingFavorites />} items={favoriteProjects} />
+          </div> */}
           <div className="margin-top--lg">
-            <CardList heading={<HeadingAllSites />} items={otherUsers} />
+            <CardList heading={<HeadingAllProjects />} items={otherProjects} />
           </div>
         </>
       ) : (
-        <CardList items={filteredUsers} />
+        <CardList items={filteredProjects} />
       )}
     </section>
   );
