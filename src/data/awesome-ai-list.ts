@@ -299,6 +299,14 @@ const AwesomeAI: AwesomeAI[] = [
     tags: ["foundationModels", "proprietary"],
   },
   {
+    title: "Perplexity AI",
+    description: "AI-powered search engine and research assistant",
+    preview: null,
+    website: "https://www.perplexity.ai/",
+    source: null,
+    tags: ["foundationModels", "proprietary", "researchTools", "contentGeneration"],
+  },
+  {
     title: "DeepSeek",
     description: "DeepSeek creators",
     preview: null,
