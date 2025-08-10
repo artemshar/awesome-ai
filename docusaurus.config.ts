@@ -119,7 +119,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Artem Shar`,
+      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://artemshar.github.io">Artem Shar</a>`,
     },
     prism: {
       theme: prismThemes.github,

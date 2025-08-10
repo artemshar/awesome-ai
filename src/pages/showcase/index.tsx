@@ -16,6 +16,9 @@ import ShowcaseSearchBar from '@site/src/pages/showcase/_components/ShowcaseSear
 import ShowcaseCards from './_components/ShowcaseCards';
 import ShowcaseFilters from './_components/ShowcaseFilters';
 
+import styles from './index.module.css';
+import clsx from 'clsx';
+
 const TITLE = translate({message: 'Awesome AI showcase'});
 const DESCRIPTION = translate({
   message: 'Curated list of AI tools, platforms, and resources for developers, creators, and businesses',
@@ -24,7 +27,7 @@ const SUBMIT_URL = 'https://github.com/artemshar/awesome-ai';
 
 function ShowcaseHeader() {
   return (
-    <section className="margin-top--lg margin-bottom--lg text--center">
+    <section className={clsx("margin-top--lg margin-bottom--lg text--center ", styles.showcaseHeader)}>
       <Heading as="h1">{TITLE}</Heading>
       <p>{DESCRIPTION}</p>
       <Link className="button button--primary" to={SUBMIT_URL}>

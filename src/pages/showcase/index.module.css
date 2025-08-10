@@ -1,0 +1,9 @@
+.showcaseHeader {
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .showcaseHeader {
+    padding: 0 2rem;
+  }
+}
