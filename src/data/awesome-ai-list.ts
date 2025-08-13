@@ -1672,6 +1672,14 @@ const AwesomeAI: AwesomeAI[] = [
     source: null,
     tags: ["pluginsIntegrations", "developmentAgents", "proprietary"],
   },
+  {
+    title: "Wandb.ai",
+    description: "The AI developer platform to build AI agents, applications, and models with confidence",
+    preview: null,
+    website: "https://wandb.ai/site",
+    source: null,
+    tags: ["databaseBackend", "developmentAgents", "proprietary"],
+  },
 ];
 
 

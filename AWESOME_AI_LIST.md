@@ -275,6 +275,7 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [sudocode](https://sudocode.ai/) [PRO] — Project generator
 - [CodeFlash AI](https://www.codeflash.ai/) [PRO] — Python optimization
 - [Micro Agent by Builder](https://www.builder.io/blog/micro-agent) [PRO] — Code writing agent
+- [Wandb.ai](https://wandb.ai/site) [PRO] — The AI developer platform to build AI agents, applications, and models with confidence
 
 ## Contributing
 
