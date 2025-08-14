@@ -39,18 +39,25 @@ function ShowcaseHeader() {
   );
 }
 
-export default function Showcase(): ReactNode {
+export const Showcase = () => {
+  return (
+    <>
+      <ShowcaseHeader />
+      <div
+        style={{display: 'flex', justifyContent: 'center'}}
+        className="container">
+        <ShowcaseSearchBar />
+      </div>
+      <ShowcaseFilters />
+      <ShowcaseCards />
+    </>
+  )
+}
+export default function ShowcasePage(): ReactNode {
   return (
     <Layout title={TITLE} description={DESCRIPTION}>
       <main className="margin-vert--lg">
-        <ShowcaseHeader />
-        <ShowcaseFilters />
-        <div
-          style={{display: 'flex', marginLeft: 'auto'}}
-          className="container">
-          <ShowcaseSearchBar />
-        </div>
-        <ShowcaseCards />
+        <Showcase />
       </main>
     </Layout>
   );

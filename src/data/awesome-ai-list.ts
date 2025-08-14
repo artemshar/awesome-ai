@@ -1,6 +1,21 @@
 import { sortBy } from "@site/src/utils/jsUtils";
 
-export type TagType = "favorite" | "opensource" | "proprietary" | "foundationModels" | "developmentTools" | "applicationDevelopment" | "creativeTools" | "businessProductivity" | "infrastructureOperations" | "researchEducation" | "versionControl" | "codeGeneration" | "pluginsIntegrations" | "IDEs" | "codeAssistants" | "testingQA" | "documentation" | "fullStackGenerators" | "uiuxGenerators" | "databaseBackend" | "imageGeneration" | "videoCreation" | "audioMusic" | "contentGeneration" | "projectManagement" | "modelServing" | "securityCompliance" | "researchTools" | "experimentationTools" | "gitClients" | "prCodeReview" | "codeGenerators" | "shellCliTools" | "openaiPlugins" | "developmentAgents";
+export type TagType = 
+  | "favorite" 
+  | "opensource" 
+  | "proprietary" 
+  | "foundationModels" 
+  | "developmentEnvironment"  // merged from IDEs, codeAssistants, testingQA, documentation
+  | "appDevelopment"          // merged from fullStackGenerators, uiuxGenerators, databaseBackend
+  | "mediaGeneration"         // merged from imageGeneration, videoCreation, audioMusic
+  | "businessProductivity"    // keep as is
+  | "infrastructureOperations" // merged from modelServing, securityCompliance
+  | "researchEducation"       // merged from researchTools, experimentationTools
+  | "versionControl"          // merged from gitClients, prCodeReview
+  | "codeGeneration"          // merged from codeGenerators, shellCliTools
+  | "pluginsIntegrations"     // merged from openaiPlugins, developmentAgents
+  | "contentGeneration"       // keep as is
+  | "projectManagement"       // keep as is
 
 export type AwesomeAI = {
   title: string;
@@ -39,18 +54,18 @@ export const Tags: { [type in TagType]: Tag } = {
     description: "Core AI models and APIs that power modern AI applications",
     color: "#4A90E2",
   },
-  developmentTools: {
-    label: "Development Tools",
-    description: "IDEs, code assistants, and development environments with AI capabilities",
+  developmentEnvironment: {
+    label: "Development Environment",
+    description: "Integrated Development Environments, code assistants, testing, and documentation tools",
     color: "#7ED321",
   },
-  applicationDevelopment: {
+  appDevelopment: {
     label: "Application Development",
     description: "Full-stack generators, UI/UX tools, and backend development platforms",
     color: "#F5A623",
   },
-  creativeTools: {
-    label: "Creative Tools",
+  mediaGeneration: {
+    label: "Media Generation",
     description: "AI-powered image, video, and audio generation and editing tools",
     color: "#BD10E0",
   },
@@ -84,56 +99,6 @@ export const Tags: { [type in TagType]: Tag } = {
     description: "Development agents, plugins, and third-party integrations",
     color: "#388E3C",
   },
-  IDEs: {
-    label: "IDEs",
-    description: "Integrated Development Environments for code editing and development",
-    color: "#6C757D",
-  },
-  codeAssistants: {
-    label: "Code Assistants",
-    description: "AI-powered code completion, suggestions, and debugging",
-    color: "#007BFF",
-  },
-  testingQA: {
-    label: "Testing & QA",
-    description: "Tools for automated testing, debugging, and quality assurance",
-    color: "#28A745",
-  },
-  documentation: {
-    label: "Documentation",
-    description: "Tools for generating, maintaining, and understanding code documentation",
-    color: "#17A2B8",
-  },
-  fullStackGenerators: {
-    label: "Full Stack Generators",
-    description: "Generators for full-stack applications, including frontend, backend, and database",
-    color: "#4CAF50",
-  },
-  uiuxGenerators: {
-    label: "UI/UX Generators",
-    description: "Generators for creating user interfaces and user experience tools",
-    color: "#FFC107",
-  },
-  databaseBackend: {
-    label: "Database & Backend",
-    description: "Tools and platforms for managing and developing backend systems, including databases and APIs",
-    color: "#00BCD4",
-  },
-  imageGeneration: {
-    label: "Image Generation",
-    description: "Tools for generating images using AI",
-    color: "#4CAF50",
-  },
-  videoCreation: {
-    label: "Video Creation",
-    description: "Tools for generating videos using AI",
-    color: "#FFC107",
-  },
-  audioMusic: {
-    label: "Audio & Music",
-    description: "Tools for generating audio and music using AI",
-    color: "#4A90E2",
-  },
   contentGeneration: {
     label: "Content Generation",
     description: "Tools for generating text, images, and other content using AI",
@@ -143,56 +108,6 @@ export const Tags: { [type in TagType]: Tag } = {
     label: "Project Management",
     description: "Tools for managing projects, tasks, and workflows using AI",
     color: "#388E3C",
-  },
-  modelServing: {
-    label: "Model Serving",
-    description: "Tools and platforms for deploying, scaling, and managing AI models",
-    color: "#007BFF",
-  },
-  securityCompliance: {
-    label: "Security & Compliance",
-    description: "Tools and platforms for ensuring security and compliance in AI systems",
-    color: "#28A745",
-  },
-  researchTools: {
-    label: "Research Tools",
-    description: "Tools and platforms for conducting research and gathering information",
-    color: "#FF6B35",
-  },
-  experimentationTools: {
-    label: "Experimentation Tools",
-    description: "Tools and platforms for experimentation and testing AI models",
-    color: "#1976D2",
-  },
-  gitClients: {
-    label: "Git Clients",
-    description: "Tools and platforms for managing and interacting with Git repositories",
-    color: "#6C757D",
-  },
-  prCodeReview: {
-    label: "PR Code Review",
-    description: "Tools and platforms for reviewing and managing pull requests",
-    color: "#FFC107",
-  },
-  codeGenerators: {
-    label: "Code Generators",
-    description: "Tools and platforms for generating code using AI",
-    color: "#1976D2",
-  },
-  shellCliTools: {
-    label: "Shell CLI Tools",
-    description: "Tools and platforms for interacting with the command line using AI",
-    color: "#7ED321",
-  },
-  openaiPlugins: {
-    label: "OpenAI Plugins",
-    description: "Plugins and extensions for OpenAI models",
-    color: "#4A90E2",
-  },
-  developmentAgents: {
-    label: "Development Agents",
-    description: "AI-powered development agents and assistants",
-    color: "#7ED321",
   },
 };
 
@@ -304,7 +219,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.perplexity.ai/",
     source: null,
-    tags: ["foundationModels", "proprietary", "researchTools", "contentGeneration"],
+    tags: ["foundationModels", "proprietary", "researchEducation", "contentGeneration"],
   },
   {
     title: "DeepSeek",
@@ -322,7 +237,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.cursor.com/",
     source: null,
-    tags: ["developmentTools", "IDEs", "proprietary", "favorite"],
+    tags: ["developmentEnvironment", "proprietary", "favorite"],
   },
   {
     title: "Replit",
@@ -330,7 +245,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://replit.com/",
     source: null,
-    tags: ["developmentTools", "IDEs", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "Theia IDE",
@@ -338,7 +253,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://theia-ide.org/",
     source: null,
-    tags: ["developmentTools", "IDEs", "opensource"],
+    tags: ["developmentEnvironment", "opensource"],
   },
   {
     title: "trae",
@@ -346,7 +261,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.trae.ai/",
     source: null,
-    tags: ["developmentTools", "IDEs", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "PearAI",
@@ -354,7 +269,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://trypear.ai/",
     source: null,
-    tags: ["developmentTools", "IDEs", "opensource"],
+    tags: ["developmentEnvironment", "opensource"],
   },
   {
     title: "Melty",
@@ -362,7 +277,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://melty.sh/",
     source: null,
-    tags: ["developmentTools", "IDEs", "opensource"],
+    tags: ["developmentEnvironment", "opensource"],
   },
   {
     title: "CodeStory",
@@ -370,7 +285,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://codestory.ai/",
     source: null,
-    tags: ["developmentTools", "IDEs", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "UI Pilot",
@@ -378,7 +293,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://ui-pilot.com/",
     source: null,
-    tags: ["developmentTools", "IDEs", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "GitWit",
@@ -386,7 +301,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://gitwit.dev/",
     source: null,
-    tags: ["developmentTools", "IDEs", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "Windsurf",
@@ -394,7 +309,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://codeium.com/windsurf",
     source: null,
-    tags: ["developmentTools", "IDEs", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "OneCompiler",
@@ -402,7 +317,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://onecompiler.com/",
     source: null,
-    tags: ["developmentTools", "IDEs", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   // Code Assistants & Copilots
   {
@@ -411,7 +326,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/features/copilot",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "Amazon Q Developer",
@@ -419,7 +334,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://aws.amazon.com/q/developer/",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "infrastructureOperations", "securityCompliance", "proprietary"],
+    tags: ["developmentEnvironment", "infrastructureOperations", "proprietary"],
   },
   {
     title: "JetBrains AI",
@@ -427,7 +342,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.jetbrains.com/ai/",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "Codeium",
@@ -435,7 +350,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://codeium.com/",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "Cline",
@@ -443,7 +358,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "opensource"],
+    tags: ["developmentEnvironment", "opensource"],
   },
   {
     title: "Refact AI",
@@ -451,7 +366,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://refact.ai/",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "opensource"],
+    tags: ["developmentEnvironment", "opensource"],
   },
   {
     title: "Continue",
@@ -459,7 +374,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://continue.dev/",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "opensource"],
+    tags: ["developmentEnvironment", "opensource"],
   },
   {
     title: "Blackbox AI",
@@ -467,7 +382,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.useblackbox.io/",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "Quack AI",
@@ -475,7 +390,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.quackai.com/",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "CodeMate",
@@ -483,7 +398,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.codemate.ai/",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "AskCodi",
@@ -491,7 +406,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.askcodi.com/",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "Rubberduck",
@@ -499,7 +414,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/rubberduck-ai/rubberduck-vscode",
     source: "https://github.com/rubberduck-ai/rubberduck-vscode",
-    tags: ["developmentTools", "codeAssistants", "opensource"],
+    tags: ["developmentEnvironment", "opensource"],
   },
   {
     title: "aiXcoder",
@@ -507,7 +422,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.aixcoder.com/en/",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "Sourcery",
@@ -515,7 +430,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://sourcery.ai/",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "Supermaven",
@@ -523,7 +438,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://supermaven.com/",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "Android Studio Bot",
@@ -531,7 +446,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://developer.android.com/studio/preview/studio-bot",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "IBM watsonx Code Assistant",
@@ -539,7 +454,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.ibm.com/products/watsonx-code-assistant-z",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "EasyCode",
@@ -547,7 +462,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.easycode.ai/",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "Kilo Code",
@@ -555,7 +470,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://kilocode.ai",
     source: null,
-    tags: ["developmentTools", "codeAssistants", "opensource"],
+    tags: ["developmentEnvironment", "opensource"],
   },
   // Testing & Quality Assurance
   {
@@ -564,7 +479,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://octomind.dev",
     source: null,
-    tags: ["developmentTools", "testingQA", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "Carbonate",
@@ -572,7 +487,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://carbonate.dev/",
     source: null,
-    tags: ["developmentTools", "testingQA", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "Meticulous.ai",
@@ -580,7 +495,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.meticulous.ai/",
     source: null,
-    tags: ["developmentTools", "testingQA", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "Qodo",
@@ -588,7 +503,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.qodo.ai/",
     source: null,
-    tags: ["developmentTools", "testingQA", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "DiffBlue",
@@ -596,7 +511,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.diffblue.com/",
     source: null,
-    tags: ["developmentTools", "testingQA", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "DeepUnit",
@@ -604,7 +519,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.deepunit.ai/",
     source: null,
-    tags: ["developmentTools", "testingQA", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "MutahunterAI",
@@ -612,7 +527,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/codeintegrity-ai/mutahunter",
     source: "https://github.com/codeintegrity-ai/mutahunter",
-    tags: ["developmentTools", "testingQA", "opensource"],
+    tags: ["developmentEnvironment", "opensource"],
   },
   {
     title: "KushoAI",
@@ -620,7 +535,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://kusho.ai/",
     source: null,
-    tags: ["developmentTools", "testingQA", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "Test Gru",
@@ -628,7 +543,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://gru.ai/home#test-gru",
     source: null,
-    tags: ["developmentTools", "testingQA", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   // Documentation & Knowledge Management
   {
@@ -637,7 +552,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://trelent.net/",
     source: null,
-    tags: ["developmentTools", "documentation", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "DiagramGPT",
@@ -645,7 +560,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.eraser.io/diagramgpt",
     source: null,
-    tags: ["developmentTools", "documentation", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "DocuWriter.ai",
@@ -653,7 +568,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.docuwriter.ai/",
     source: null,
-    tags: ["developmentTools", "documentation", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "Swimm",
@@ -661,7 +576,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://swimm.io",
     source: null,
-    tags: ["developmentTools", "documentation", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "README-AI",
@@ -669,7 +584,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/eli64s/readme-ai",
     source: "https://github.com/eli64s/readme-ai",
-    tags: ["developmentTools", "documentation", "opensource"],
+    tags: ["developmentEnvironment", "opensource"],
   },
   {
     title: "Supacodes",
@@ -677,7 +592,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.supacodes.com",
     source: null,
-    tags: ["developmentTools", "documentation", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   {
     title: "CodexAtlas",
@@ -685,7 +600,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://codedocumentation.app/",
     source: null,
-    tags: ["developmentTools", "documentation", "proprietary"],
+    tags: ["developmentEnvironment", "proprietary"],
   },
   // AI Application Development
   // Full-Stack App Generators
@@ -695,7 +610,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://picoapps.xyz",
     source: null,
-    tags: ["applicationDevelopment", "fullStackGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "Co.dev",
@@ -703,7 +618,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.co.dev/",
     source: null,
-    tags: ["applicationDevelopment", "fullStackGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "Bolt.new",
@@ -711,7 +626,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://bolt.new",
     source: null,
-    tags: ["applicationDevelopment", "fullStackGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "Lovable",
@@ -719,7 +634,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://lovable.dev/",
     source: null,
-    tags: ["applicationDevelopment", "fullStackGenerators", "proprietary", "favorite"],
+    tags: ["appDevelopment", "proprietary", "favorite"],
   },
   {
     title: "SoftGen",
@@ -727,7 +642,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://softgen.ai/",
     source: null,
-    tags: ["applicationDevelopment", "fullStackGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "e2b_Fragments",
@@ -735,7 +650,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://fragments.e2b.dev/",
     source: null,
-    tags: ["applicationDevelopment", "fullStackGenerators", "infrastructureOperations", "modelServing", "proprietary"],
+    tags: ["appDevelopment", "infrastructureOperations", "proprietary"],
   },
   {
     title: "Bolt.diy",
@@ -743,7 +658,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/stackblitz-labs/bolt.diy",
     source: "https://github.com/stackblitz-labs/bolt.diy",
-    tags: ["applicationDevelopment", "fullStackGenerators", "opensource"],
+    tags: ["appDevelopment", "opensource"],
   },
   {
     title: "Srcbook",
@@ -751,7 +666,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/srcbookdev/srcbook",
     source: "https://github.com/srcbookdev/srcbook",
-    tags: ["applicationDevelopment", "fullStackGenerators", "opensource"],
+    tags: ["appDevelopment", "opensource"],
   },
   {
     title: "Literally anything",
@@ -759,7 +674,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://literallyanything.io",
     source: null,
-    tags: ["applicationDevelopment", "fullStackGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "GPT Web App Generator",
@@ -767,7 +682,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://magic-app-generator.wasp-lang.dev/",
     source: null,
-    tags: ["applicationDevelopment", "fullStackGenerators", "opensource"],
+    tags: ["appDevelopment", "opensource"],
   },
   {
     title: "Make Real",
@@ -775,7 +690,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://makereal.tldraw.com/",
     source: null,
-    tags: ["applicationDevelopment", "fullStackGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "Marblism",
@@ -783,7 +698,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://marblism.com",
     source: null,
-    tags: ["applicationDevelopment", "fullStackGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "Glowbom",
@@ -791,7 +706,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://glowbom.com/",
     source: null,
-    tags: ["applicationDevelopment", "fullStackGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "Mage",
@@ -799,7 +714,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://usemage.ai/",
     source: null,
-    tags: ["applicationDevelopment", "fullStackGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "ScrollHub",
@@ -807,7 +722,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/breck7/ScrollHub",
     source: "https://github.com/breck7/ScrollHub",
-    tags: ["applicationDevelopment", "fullStackGenerators", "opensource"],
+    tags: ["appDevelopment", "opensource"],
   },
   {
     title: "Kineto",
@@ -815,7 +730,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://blog.jetbrains.com/kineto/2025/08/make-your-ideas-clickable-with-kineto-by-jetbrains/",
     source: null,
-    tags: ["applicationDevelopment", "fullStackGenerators", "proprietary", "favorite"],
+    tags: ["appDevelopment", "proprietary", "favorite"],
   },
   // UI/UX Generators
   {
@@ -824,7 +739,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://v0.dev/",
     source: null,
-    tags: ["applicationDevelopment", "uiuxGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "Galileo AI",
@@ -832,7 +747,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.usegalileo.ai/",
     source: null,
-    tags: ["applicationDevelopment", "uiuxGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "Uizard",
@@ -840,7 +755,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://uizard.io/",
     source: null,
-    tags: ["applicationDevelopment", "uiuxGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "Magic Patterns",
@@ -848,7 +763,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.magicpatterns.com/",
     source: null,
-    tags: ["applicationDevelopment", "uiuxGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "Rendition Create",
@@ -856,7 +771,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.renditioncreate.com/",
     source: null,
-    tags: ["applicationDevelopment", "uiuxGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "Rapidpages",
@@ -864,7 +779,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/rapidpages/rapidpages",
     source: "https://github.com/rapidpages/rapidpages",
-    tags: ["applicationDevelopment", "uiuxGenerators", "opensource"],
+    tags: ["appDevelopment", "opensource"],
   },
   {
     title: "Tempo",
@@ -872,7 +787,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.tempolabs.ai/",
     source: null,
-    tags: ["applicationDevelopment", "uiuxGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "Kombai",
@@ -880,7 +795,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://kombai.com/",
     source: null,
-    tags: ["applicationDevelopment", "uiuxGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "CodeParrot",
@@ -888,7 +803,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.codeparrot.ai/",
     source: null,
-    tags: ["applicationDevelopment", "uiuxGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "Frontly",
@@ -896,7 +811,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://fronty.com/",
     source: null,
-    tags: ["applicationDevelopment", "uiuxGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "BoringUi",
@@ -904,7 +819,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.boringui.xyz/",
     source: null,
-    tags: ["applicationDevelopment", "uiuxGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "Polymet",
@@ -912,7 +827,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://polymet.ai",
     source: null,
-    tags: ["applicationDevelopment", "uiuxGenerators", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   // Database & Backend Tools
   {
@@ -921,7 +836,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://getwren.ai/oss",
     source: null,
-    tags: ["applicationDevelopment", "databaseBackend", "opensource"],
+    tags: ["appDevelopment", "opensource"],
   },
   {
     title: "TEXT2SQL.AI",
@@ -929,7 +844,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.text2sql.ai/",
     source: null,
-    tags: ["applicationDevelopment", "databaseBackend", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "SQLAI.ai",
@@ -937,7 +852,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.sqlai.ai/",
     source: null,
-    tags: ["applicationDevelopment", "databaseBackend", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "CodeWP",
@@ -945,7 +860,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://codewp.ai/",
     source: null,
-    tags: ["applicationDevelopment", "databaseBackend", "proprietary"],
+    tags: ["appDevelopment", "proprietary"],
   },
   // AI Creative Tools
   // Image Generation & Editing
@@ -955,7 +870,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.midjourney.com",
     source: null,
-    tags: ["creativeTools", "imageGeneration", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "Stable Diffusion",
@@ -963,7 +878,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/CompVis/stable-diffusion",
     source: "https://github.com/CompVis/stable-diffusion",
-    tags: ["creativeTools", "imageGeneration", "opensource"],
+    tags: ["mediaGeneration", "opensource"],
   },
   {
     title: "DALL-E",
@@ -971,7 +886,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://openai.com/blog/dall-e/",
     source: null,
-    tags: ["creativeTools", "imageGeneration", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "DragGAN",
@@ -979,7 +894,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/XingangPan/DragGAN",
     source: "https://github.com/XingangPan/DragGAN",
-    tags: ["creativeTools", "imageGeneration", "opensource"],
+    tags: ["mediaGeneration", "opensource"],
   },
   {
     title: "neural.love/ai-art-generator",
@@ -987,7 +902,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://neural.love/ai-art-generator",
     source: null,
-    tags: ["creativeTools", "imageGeneration", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "Lensa by Prisma AI",
@@ -995,7 +910,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://prisma-ai.com/lensa",
     source: null,
-    tags: ["creativeTools", "imageGeneration", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "Imagen",
@@ -1003,7 +918,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://imagen.research.google/",
     source: null,
-    tags: ["creativeTools", "imageGeneration", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   // Video Creation & Editing
   {
@@ -1012,7 +927,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://sora.com/",
     source: null,
-    tags: ["creativeTools", "videoCreation", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "Runway",
@@ -1020,7 +935,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://runwayml.com/",
     source: null,
-    tags: ["creativeTools", "videoCreation", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "Descript",
@@ -1028,7 +943,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.descript.com/",
     source: null,
-    tags: ["creativeTools", "videoCreation", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "Synthesia",
@@ -1036,7 +951,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.synthesia.io/",
     source: null,
-    tags: ["creativeTools", "videoCreation", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "Wondershare Filmora",
@@ -1044,7 +959,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://filmora.wondershare.com/",
     source: null,
-    tags: ["creativeTools", "videoCreation", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "Capsule",
@@ -1052,7 +967,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.capsule.video/",
     source: null,
-    tags: ["creativeTools", "videoCreation", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "invideo AI",
@@ -1060,7 +975,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://invideo.io/",
     source: null,
-    tags: ["creativeTools", "videoCreation", "businessProductivity", "contentGeneration", "proprietary"],
+    tags: ["mediaGeneration", "businessProductivity", "contentGeneration", "proprietary"],
   },
   {
     title: "Peech",
@@ -1068,7 +983,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.peech-ai.com",
     source: null,
-    tags: ["creativeTools", "videoCreation", "businessProductivity", "contentGeneration", "proprietary"],
+    tags: ["mediaGeneration", "businessProductivity", "contentGeneration", "proprietary"],
   },
   {
     title: "Vyond",
@@ -1076,7 +991,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.vyond.com/",
     source: null,
-    tags: ["creativeTools", "videoCreation", "businessProductivity", "contentGeneration", "proprietary"],
+    tags: ["mediaGeneration", "businessProductivity", "contentGeneration", "proprietary"],
   },
   {
     title: "revid.ai",
@@ -1084,7 +999,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.revid.ai/",
     source: null,
-    tags: ["creativeTools", "videoCreation", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "LTX Studio",
@@ -1092,7 +1007,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://ltx.studio/",
     source: null,
-    tags: ["creativeTools", "videoCreation", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "Wan AI",
@@ -1100,7 +1015,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.wan-ai.org/",
     source: null,
-    tags: ["creativeTools", "videoCreation", "opensource"],
+    tags: ["mediaGeneration", "opensource"],
   },
   {
     title: "Veo",
@@ -1108,7 +1023,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://deepmind.google/models/veo/",
     source: null,
-    tags: ["creativeTools", "videoCreation", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   // Audio & Music Generation
   {
@@ -1117,7 +1032,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://google-research.github.io/seanet/musiclm/examples/",
     source: null,
-    tags: ["creativeTools", "audioMusic", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "AIVA",
@@ -1125,7 +1040,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.aiva.ai/",
     source: null,
-    tags: ["creativeTools", "audioMusic", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "Soundful",
@@ -1133,7 +1048,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://soundful.com/",
     source: null,
-    tags: ["creativeTools", "audioMusic", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "Moises AI",
@@ -1141,7 +1056,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://moises.ai/",
     source: null,
-    tags: ["creativeTools", "audioMusic", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "generative.fm",
@@ -1149,7 +1064,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://generative.fm/",
     source: null,
-    tags: ["creativeTools", "audioMusic", "opensource"],
+    tags: ["mediaGeneration", "opensource"],
   },
   {
     title: "mubert",
@@ -1157,7 +1072,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://mubert.com/",
     source: null,
-    tags: ["creativeTools", "audioMusic", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "Hydra II",
@@ -1165,7 +1080,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://rightsify.com/hydra/",
     source: null,
-    tags: ["creativeTools", "audioMusic", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "Soundraw",
@@ -1173,7 +1088,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://soundraw.io/",
     source: null,
-    tags: ["creativeTools", "audioMusic", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "Landr",
@@ -1181,7 +1096,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.landr.com/",
     source: null,
-    tags: ["creativeTools", "audioMusic", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "Beatoven",
@@ -1189,7 +1104,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.beatoven.ai/",
     source: null,
-    tags: ["creativeTools", "audioMusic", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "Uido",
@@ -1197,7 +1112,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.udio.com/",
     source: null,
-    tags: ["creativeTools", "audioMusic", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   {
     title: "Suno",
@@ -1205,7 +1120,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://suno.com/",
     source: null,
-    tags: ["creativeTools", "audioMusic", "proprietary"],
+    tags: ["mediaGeneration", "proprietary"],
   },
   // AI Business & Productivity
   // Project Management
@@ -1241,7 +1156,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://tabbyml.github.io/tabby/",
     source: null,
-    tags: ["infrastructureOperations", "modelServing", "opensource"],
+    tags: ["infrastructureOperations", "opensource"],
   },
   {
     title: "CodeComplete",
@@ -1249,7 +1164,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://codecomplete.ai/",
     source: null,
-    tags: ["infrastructureOperations", "modelServing", "proprietary"],
+    tags: ["infrastructureOperations", "proprietary"],
   },
   // Security & Compliance
   {
@@ -1258,7 +1173,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://pixee.ai",
     source: null,
-    tags: ["infrastructureOperations", "securityCompliance", "proprietary"],
+    tags: ["infrastructureOperations", "proprietary"],
   },
   {
     title: "Corgea",
@@ -1266,7 +1181,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://corgea.com/",
     source: null,
-    tags: ["infrastructureOperations", "securityCompliance", "proprietary"],
+    tags: ["infrastructureOperations", "proprietary"],
   },
   // AI Research & Education
   // Research Tools
@@ -1276,7 +1191,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://kantord.github.io/SeaGOAT/latest/",
     source: null,
-    tags: ["researchEducation", "researchTools", "opensource"],
+    tags: ["researchEducation", "opensource"],
   },
   {
     title: "Bloop",
@@ -1284,7 +1199,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://bloop.ai/",
     source: null,
-    tags: ["researchEducation", "researchTools", "proprietary"],
+    tags: ["researchEducation", "proprietary"],
   },
   {
     title: "Buildt",
@@ -1292,7 +1207,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.buildt.ai/",
     source: null,
-    tags: ["researchEducation", "researchTools", "proprietary"],
+    tags: ["researchEducation", "proprietary"],
   },
   // Experimentation Tools
   {
@@ -1301,7 +1216,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/melih-unsal/DemoGPT",
     source: "https://github.com/melih-unsal/DemoGPT",
-    tags: ["researchEducation", "experimentationTools", "opensource"],
+    tags: ["researchEducation", "opensource"],
   },
   {
     title: "DevOpsGPT",
@@ -1309,7 +1224,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/kuafuai/DevOpsGPT",
     source: "https://github.com/kuafuai/DevOpsGPT",
-    tags: ["researchEducation", "experimentationTools", "opensource"],
+    tags: ["researchEducation", "opensource"],
   },
   {
     title: "Potpie",
@@ -1317,7 +1232,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://potpie.ai",
     source: null,
-    tags: ["researchEducation", "experimentationTools", "opensource"],
+    tags: ["researchEducation", "opensource"],
   },
   // AI Version Control & Collaboration
   // Git Clients & Tools
@@ -1327,7 +1242,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://gitbrain.dev/",
     source: null,
-    tags: ["versionControl", "gitClients", "proprietary"],
+    tags: ["versionControl", "proprietary"],
   },
   {
     title: "GitButler",
@@ -1335,7 +1250,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://gitbutler.com/",
     source: null,
-    tags: ["versionControl", "gitClients", "proprietary"],
+    tags: ["versionControl", "proprietary"],
   },
   {
     title: "GitFluence",
@@ -1343,7 +1258,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.gitfluence.com/",
     source: null,
-    tags: ["versionControl", "gitClients", "proprietary"],
+    tags: ["versionControl", "proprietary"],
   },
   // PR & Code Review
   {
@@ -1352,7 +1267,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://greptile.com/code-review-bot",
     source: null,
-    tags: ["versionControl", "prCodeReview", "proprietary"],
+    tags: ["versionControl", "proprietary"],
   },
   {
     title: "EntelligenceAI",
@@ -1360,7 +1275,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://entelligence.ai/pr",
     source: null,
-    tags: ["versionControl", "prCodeReview", "proprietary"],
+    tags: ["versionControl", "proprietary"],
   },
   {
     title: "Sweep",
@@ -1368,7 +1283,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/sweepai/sweep",
     source: "https://github.com/sweepai/sweep",
-    tags: ["versionControl", "prCodeReview", "opensource"],
+    tags: ["versionControl", "opensource"],
   },
   {
     title: "Code Review GPT",
@@ -1376,7 +1291,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/mattzcarey/code-review-gpt",
     source: "https://github.com/mattzcarey/code-review-gpt",
-    tags: ["versionControl", "prCodeReview", "opensource"],
+    tags: ["versionControl", "opensource"],
   },
   {
     title: "Codeium PR Agent",
@@ -1384,7 +1299,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/Codium-ai/pr-agent",
     source: "https://github.com/Codium-ai/pr-agent",
-    tags: ["versionControl", "prCodeReview", "opensource"],
+    tags: ["versionControl", "opensource"],
   },
   {
     title: "Nova",
@@ -1392,7 +1307,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.trynova.ai/",
     source: null,
-    tags: ["versionControl", "prCodeReview", "proprietary"],
+    tags: ["versionControl", "proprietary"],
   },
   {
     title: "CodeRabbit",
@@ -1400,7 +1315,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://coderabbit.ai/",
     source: null,
-    tags: ["versionControl", "prCodeReview", "proprietary"],
+    tags: ["versionControl", "proprietary"],
   },
   {
     title: "SwePT",
@@ -1408,7 +1323,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/keerthanpg/SwePT",
     source: "https://github.com/keerthanpg/SwePT",
-    tags: ["versionControl", "prCodeReview", "opensource"],
+    tags: ["versionControl", "opensource"],
   },
   {
     title: "Duckie",
@@ -1416,7 +1331,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://duckie.ai/",
     source: null,
-    tags: ["versionControl", "prCodeReview", "proprietary"],
+    tags: ["versionControl", "proprietary"],
   },
   {
     title: "PR Explainer Bot",
@@ -1424,7 +1339,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://pr-explainer-bot.web.app/",
     source: null,
-    tags: ["versionControl", "prCodeReview", "opensource"],
+    tags: ["versionControl", "opensource"],
   },
   {
     title: "Goast",
@@ -1432,7 +1347,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://goast.ai/",
     source: null,
-    tags: ["versionControl", "prCodeReview", "proprietary"],
+    tags: ["versionControl", "proprietary"],
   },
   {
     title: "vx.dev",
@@ -1440,7 +1355,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/Yuyz0112/vx.dev",
     source: "https://github.com/Yuyz0112/vx.dev",
-    tags: ["versionControl", "prCodeReview", "opensource"],
+    tags: ["versionControl", "opensource"],
   },
   {
     title: "CodeAnt AI",
@@ -1448,7 +1363,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.codeant.ai/",
     source: null,
-    tags: ["versionControl", "prCodeReview", "proprietary"],
+    tags: ["versionControl", "proprietary"],
   },
   {
     title: "What The Diff",
@@ -1456,7 +1371,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://whatthediff.ai/",
     source: null,
-    tags: ["versionControl", "prCodeReview", "proprietary"],
+    tags: ["versionControl", "proprietary"],
   },
   {
     title: "Trag",
@@ -1464,7 +1379,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://usetrag.com/",
     source: null,
-    tags: ["versionControl", "prCodeReview", "proprietary"],
+    tags: ["versionControl", "proprietary"],
   },
   {
     title: "CodeReviewBot",
@@ -1472,7 +1387,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://codereviewbot.ai/",
     source: null,
-    tags: ["versionControl", "prCodeReview", "proprietary"],
+    tags: ["versionControl", "proprietary"],
   },
   {
     title: "Callstack.ai Code Reviewer",
@@ -1480,7 +1395,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://callstack.ai/code-reviewer",
     source: null,
-    tags: ["versionControl", "prCodeReview", "proprietary"],
+    tags: ["versionControl", "proprietary"],
   },
   // AI Code Generation & Snippets
   // Code Generators
@@ -1490,7 +1405,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://codepal.ai/",
     source: null,
-    tags: ["codeGeneration", "codeGenerators", "proprietary"],
+    tags: ["codeGeneration", "proprietary"],
   },
   {
     title: "AI Code Convert",
@@ -1498,7 +1413,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://aicodeconvert.com/",
     source: null,
-    tags: ["codeGeneration", "codeGenerators", "proprietary"],
+    tags: ["codeGeneration", "proprietary"],
   },
   {
     title: "AI Code Playground",
@@ -1506,7 +1421,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://aicodeplayground.com/",
     source: null,
-    tags: ["codeGeneration", "codeGenerators", "proprietary"],
+    tags: ["codeGeneration", "proprietary"],
   },
   {
     title: "AutoRegex",
@@ -1514,7 +1429,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.autoregex.xyz/",
     source: null,
-    tags: ["codeGeneration", "codeGenerators", "proprietary"],
+    tags: ["codeGeneration", "proprietary"],
   },
   // Shell & CLI Tools
   {
@@ -1523,7 +1438,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.askcommand.cppexpert.online/",
     source: null,
-    tags: ["codeGeneration", "shellCliTools", "proprietary"],
+    tags: ["codeGeneration", "proprietary"],
   },
   {
     title: "Butterfish",
@@ -1531,7 +1446,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://butterfi.sh",
     source: null,
-    tags: ["codeGeneration", "shellCliTools", "opensource"],
+    tags: ["codeGeneration", "opensource"],
   },
   {
     title: "Shell Whiz",
@@ -1539,7 +1454,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/beimzhan/shell-whiz",
     source: "https://github.com/beimzhan/shell-whiz",
-    tags: ["codeGeneration", "shellCliTools", "opensource"],
+    tags: ["codeGeneration", "opensource"],
   },
   {
     title: "talk-codebase",
@@ -1547,7 +1462,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/rsaryev/talk-codebase",
     source: "https://github.com/rsaryev/talk-codebase",
-    tags: ["codeGeneration", "shellCliTools", "opensource"],
+    tags: ["codeGeneration", "opensource"],
   },
   {
     title: "gptcomet",
@@ -1555,7 +1470,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/belingud/gptcomet",
     source: "https://github.com/belingud/gptcomet",
-    tags: ["codeGeneration", "shellCliTools", "opensource"],
+    tags: ["codeGeneration", "opensource"],
   },
   {
     title: "code-collator",
@@ -1563,7 +1478,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/tawandakembo/code-collator",
     source: "https://github.com/tawandakembo/code-collator",
-    tags: ["codeGeneration", "shellCliTools", "opensource"],
+    tags: ["codeGeneration", "opensource"],
   },
   // AI Plugins & Integrations
   // OpenAI Plugins
@@ -1573,7 +1488,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://gitsearch.sdan.io/",
     source: null,
-    tags: ["pluginsIntegrations", "openaiPlugins", "opensource"],
+    tags: ["pluginsIntegrations", "opensource"],
   },
   {
     title: "Code ChatGPT Plugin",
@@ -1581,7 +1496,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/kesor/chatgpt-code-plugin",
     source: "https://github.com/kesor/chatgpt-code-plugin",
-    tags: ["pluginsIntegrations", "openaiPlugins", "opensource"],
+    tags: ["pluginsIntegrations", "opensource"],
   },
   // Development Agents
   {
@@ -1590,7 +1505,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/smol-ai/developer",
     source: "https://github.com/smol-ai/developer",
-    tags: ["pluginsIntegrations", "developmentAgents", "opensource"],
+    tags: ["pluginsIntegrations", "opensource"],
   },
   {
     title: "Aider",
@@ -1598,7 +1513,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/paul-gauthier/aider",
     source: "https://github.com/paul-gauthier/aider",
-    tags: ["pluginsIntegrations", "developmentAgents", "opensource"],
+    tags: ["pluginsIntegrations", "opensource"],
   },
   {
     title: "Blinky",
@@ -1606,7 +1521,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/seahyinghang8/blinky",
     source: "https://github.com/seahyinghang8/blinky",
-    tags: ["pluginsIntegrations", "developmentAgents", "opensource"],
+    tags: ["pluginsIntegrations", "opensource"],
   },
   {
     title: "Mentat",
@@ -1614,7 +1529,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.mentat.ai/",
     source: null,
-    tags: ["pluginsIntegrations", "developmentAgents", "proprietary"],
+    tags: ["pluginsIntegrations", "proprietary"],
   },
   {
     title: "GPT Engineer",
@@ -1622,7 +1537,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/AntonOsika/gpt-engineer",
     source: "https://github.com/AntonOsika/gpt-engineer",
-    tags: ["pluginsIntegrations", "developmentAgents", "opensource"],
+    tags: ["pluginsIntegrations", "opensource"],
   },
   {
     title: "GPT Migrate",
@@ -1630,7 +1545,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://github.com/0xpayne/gpt-migrate",
     source: "https://github.com/0xpayne/gpt-migrate",
-    tags: ["pluginsIntegrations", "developmentAgents", "opensource"],
+    tags: ["pluginsIntegrations", "opensource"],
   },
   {
     title: "Second.dev",
@@ -1638,7 +1553,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.second.dev/",
     source: null,
-    tags: ["pluginsIntegrations", "developmentAgents", "proprietary"],
+    tags: ["pluginsIntegrations", "proprietary"],
   },
   {
     title: "Factory",
@@ -1646,7 +1561,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.factory.ai/",
     source: null,
-    tags: ["pluginsIntegrations", "developmentAgents", "proprietary"],
+    tags: ["pluginsIntegrations", "proprietary"],
   },
   {
     title: "sudocode",
@@ -1654,7 +1569,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://sudocode.ai/",
     source: null,
-    tags: ["pluginsIntegrations", "developmentAgents", "proprietary"],
+    tags: ["pluginsIntegrations", "proprietary"],
   },
   {
     title: "CodeFlash AI",
@@ -1662,7 +1577,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.codeflash.ai/",
     source: null,
-    tags: ["pluginsIntegrations", "developmentAgents", "proprietary"],
+    tags: ["pluginsIntegrations", "proprietary"],
   },
   {
     title: "Micro Agent by Builder",
@@ -1670,7 +1585,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://www.builder.io/blog/micro-agent",
     source: null,
-    tags: ["pluginsIntegrations", "developmentAgents", "proprietary"],
+    tags: ["pluginsIntegrations", "proprietary"],
   },
   {
     title: "Wandb.ai",
@@ -1678,7 +1593,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://wandb.ai/site",
     source: null,
-    tags: ["databaseBackend", "developmentAgents", "proprietary"],
+    tags: ["pluginsIntegrations", "proprietary"],
   },
 ];
 
