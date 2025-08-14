@@ -36,7 +36,7 @@ export const Tags: { [type in TagType]: Tag } = {
   favorite: {
     label: "Our Favorite",
     description:
-      "Our favorite Docusaurus sites that you must absolutely check out!",
+      "Our favorite AI tools that you must absolutely check out!",
     color: "#e9669e",
   },
   opensource: {
