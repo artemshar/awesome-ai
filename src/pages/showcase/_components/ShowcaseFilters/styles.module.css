@@ -5,6 +5,13 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+.headingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+
 .headingRow {
   display: flex;
   align-items: center;
@@ -36,7 +43,14 @@
 .tagList {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .tagList {
+    justify-content: flex-start;
+  }
 }
 
 .tagListItem {
@@ -50,4 +64,10 @@
 
 .tagListItem:last-child {
   margin-right: 0;
+}
+
+.headingCount {
+  font-size: 1.25rem;
+  color: var(--ifm-color-gray-900);
+  text-align: center;
 }

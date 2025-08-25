@@ -118,6 +118,15 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: 'Contribute',
+          items: [
+            {
+              label: 'Add your product',
+              href: 'https://github.com/artemshar/awesome-ai/blob/main/CONTRIBUTING.md',
+            },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} <a href="https://artemshar.space/">Artem Shar</a>`,
     },

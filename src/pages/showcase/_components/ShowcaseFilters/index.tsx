@@ -62,14 +62,11 @@ function ShowcaseTagList() {
 }
 
 function HeadingText() {
-  const filteredProjects = useFilteredProjects();
-  const siteCountPlural = useSiteCountPlural();
   return (
     <div className={styles.headingText}>
       <Heading as="h2">
         <Translate id="showcase.filters.title">Filters</Translate>
       </Heading>
-      <span>{siteCountPlural(filteredProjects.length)}</span>
     </div>
   );
 }
@@ -93,8 +90,12 @@ function HeadingRow() {
 }
 
 export default function ShowcaseFilters(): ReactNode {
+  const filteredProjects = useFilteredProjects();
+  const siteCountPlural = useSiteCountPlural();
+
   return (
-    <section className="container margin-top--l margin-bottom--lg">
+    <section className={clsx("container margin-top--l margin-bottom--lg", styles.headingContainer)}>
+      <span className={styles.headingCount}>{siteCountPlural(filteredProjects.length)}</span>
       <HeadingRow />
       <ShowcaseTagList />
     </section>

@@ -23,18 +23,12 @@ const TITLE = translate({message: 'Awesome AI showcase'});
 const DESCRIPTION = translate({
   message: 'Curated list of AI tools, platforms, and resources for developers, creators, and businesses',
 });
-const SUBMIT_URL = 'https://github.com/artemshar/awesome-ai';
 
 function ShowcaseHeader() {
   return (
     <section className={clsx("margin-top--lg margin-bottom--lg text--center ", styles.showcaseHeader)}>
       <Heading as="h1">{TITLE}</Heading>
       <p>{DESCRIPTION}</p>
-      <Link className="button button--primary" to={SUBMIT_URL}>
-        <Translate id="showcase.header.button">
-          Add your product
-        </Translate>
-      </Link>
     </section>
   );
 }
