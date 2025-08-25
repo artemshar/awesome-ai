@@ -22,7 +22,7 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 
 ## Tools & Resources
 
-- [GPT-4](https://openai.com/gpt-4) - OpenAI's most advanced system
+- [GPT-5](https://openai.com/index/introducing-gpt-5/) - OpenAI's most advanced system
 - [Claude](https://www.anthropic.com/claude) - Anthropic's AI assistant
 - [Gemini](https://deepmind.google/technologies/gemini/) - Google's multimodal model
 - [Llama 2](https://ai.meta.com/llama/) - Meta's open source language model

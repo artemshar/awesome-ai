@@ -116,10 +116,10 @@ export const TagList = Object.keys(Tags) as TagType[];
 const AwesomeAI: AwesomeAI[] = [
   // Foundation Models
   {
-    title: "GPT-4",
+    title: "GPT-5",
     description: "OpenAI's most advanced system",
     preview: null,
-    website: "https://openai.com/gpt-4",
+    website: "https://openai.com/index/introducing-gpt-5/",
     source: null,
     tags: ["foundationModels", "proprietary", "favorite"],
   },
