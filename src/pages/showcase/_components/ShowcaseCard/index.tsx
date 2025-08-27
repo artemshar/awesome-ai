@@ -9,8 +9,9 @@ import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
-import Image from '@theme/IdealImage';
-import {Tags, TagList, type TagType, type AwesomeAI} from '@site/src/data/awesome-ai-list';
+
+import {Tags, TagList } from '@site/src/data/awesome-ai-list';
+import { type TagType, type AwesomeAI} from '@site/src/data/types';
 import {sortBy} from '@site/src/utils/jsUtils';
 import Heading from '@theme/Heading';
 import FavoriteIcon from '../FavoriteIcon';
@@ -65,7 +66,7 @@ function ShowcaseCard({awesomeAI}: {awesomeAI: AwesomeAI}) {
   return (
     <li key={awesomeAI.title} className="card shadow--md">
       <div className={clsx('card__image', styles.showcaseCardImage)}>
-        <Image img={image} alt={awesomeAI.title} />
+        <img src={image} alt={awesomeAI.title} />
       </div>
       <div className="card__body">
         <div className={clsx(styles.showcaseCardHeader)}>

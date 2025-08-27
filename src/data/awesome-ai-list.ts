@@ -1,36 +1,5 @@
 import { sortBy } from "@site/src/utils/jsUtils";
-
-export type TagType = 
-  | "favorite" 
-  | "opensource" 
-  | "proprietary" 
-  | "foundationModels" 
-  | "developmentEnvironment"  // merged from IDEs, codeAssistants, testingQA, documentation
-  | "appDevelopment"          // merged from fullStackGenerators, uiuxGenerators, databaseBackend
-  | "mediaGeneration"         // merged from imageGeneration, videoCreation, audioMusic
-  | "businessProductivity"    // keep as is
-  | "infrastructureOperations" // merged from modelServing, securityCompliance
-  | "researchEducation"       // merged from researchTools, experimentationTools
-  | "versionControl"          // merged from gitClients, prCodeReview
-  | "codeGeneration"          // merged from codeGenerators, shellCliTools
-  | "pluginsIntegrations"     // merged from openaiPlugins, developmentAgents
-  | "contentGeneration"       // keep as is
-  | "projectManagement"       // keep as is
-
-export type AwesomeAI = {
-  title: string;
-  description: string;
-  preview: string | null; // null = use our serverless screenshot service
-  website: string;
-  source: string | null;
-  tags: TagType[];
-};
-
-export type Tag = {
-  label: string;
-  description: string;
-  color: string;
-};
+import { TagType, Tag, type AwesomeAI } from "@site/src/data/types";
 
 export const Tags: { [type in TagType]: Tag } = {
   favorite: {
@@ -107,6 +76,11 @@ export const Tags: { [type in TagType]: Tag } = {
   projectManagement: {
     label: "Project Management",
     description: "Tools for managing projects, tasks, and workflows using AI",
+    color: "#388E3C",
+  },
+  aiAgentsWorkflows: {
+    label: "AI Agents & Workflows",
+    description: "Tools for building AI agents and workflows",
     color: "#388E3C",
   },
 };
@@ -1595,8 +1569,15 @@ const AwesomeAI: AwesomeAI[] = [
     source: null,
     tags: ["pluginsIntegrations", "proprietary"],
   },
+  {
+    title: "n8n",
+    description: "AI workflow automation to implement multi-step AI agents and integrate apps",
+    preview: null,
+    website: "https://n8n.io/",
+    source: "https://github.com/n8n-io/n8n",
+    tags: ["aiAgentsWorkflows", "proprietary"],
+  },
 ];
-
 
 function sortAwesomeAI() {
   let result = AwesomeAI;

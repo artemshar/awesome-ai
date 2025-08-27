@@ -5,7 +5,7 @@ import {
   useQueryString,
   useQueryStringList,
 } from '@docusaurus/theme-common';
-import type {TagType, AwesomeAI} from '@site/src/data/awesome-ai-list';
+import type {TagType, AwesomeAI} from '@site/src/data/types';
 import {sortedAwesomeAI} from '@site/src/data/awesome-ai-list';
 
 export function useSearchName() {

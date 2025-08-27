@@ -19,6 +19,7 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 13. [Plugins & Integrations](https://artemshar.space/awesome-ai/?tags=pluginsIntegrations)
 14. [Content Generation](https://artemshar.space/awesome-ai/?tags=contentGeneration)
 15. [Project Management](https://artemshar.space/awesome-ai/?tags=projectManagement)
+16. [AI Agents & Workflows](https://artemshar.space/awesome-ai/?tags=aiAgentsWorkflows)
 
 ## Tools & Resources
 
@@ -203,3 +204,4 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [CodeFlash AI](https://www.codeflash.ai/) - Python optimization
 - [Micro Agent by Builder](https://www.builder.io/blog/micro-agent) - Code writing agent
 - [Wandb.ai](https://wandb.ai/site) - The AI developer platform to build AI agents, applications, and models with confidence
+- [n8n](https://n8n.io/) - AI workflow automation to implement multi-step AI agents and integrate apps

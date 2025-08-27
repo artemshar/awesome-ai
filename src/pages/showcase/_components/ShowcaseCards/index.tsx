@@ -8,7 +8,8 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
 import Translate from '@docusaurus/Translate';
-import {sortedAwesomeAI, type AwesomeAI} from '@site/src/data/awesome-ai-list';
+import {sortedAwesomeAI} from '@site/src/data/awesome-ai-list';
+import {type AwesomeAI} from '@site/src/data/types';
 import Heading from '@theme/Heading';
 import FavoriteIcon from '../FavoriteIcon';
 import ShowcaseCard from '../ShowcaseCard';

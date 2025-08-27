@@ -70,18 +70,7 @@ const config: Config = {
     ],
   ],
 
-  plugins: [
-    [
-      '@docusaurus/plugin-ideal-image',
-      {
-        quality: 70,
-        max: 1030, // max resized image's width, in pixels
-        min: 640, // min resized image's width, in pixels
-        steps: 2, // the max number of images generated between min and max (inclusive)
-        disableInDev: false,
-      },
-    ],
-  ],
+  plugins: [],
 
   themeConfig: {
     // Replace with your project's social card
