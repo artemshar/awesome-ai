@@ -1577,6 +1577,14 @@ const AwesomeAI: AwesomeAI[] = [
     source: "https://github.com/n8n-io/n8n",
     tags: ["aiAgentsWorkflows", "proprietary"],
   },
+  {
+    title: "Google NotebookLM",
+    description: "AI Research Tool & Thinking Partner",
+    preview: null,
+    website: "https://notebooklm.google",
+    source: null,
+    tags: ["researchEducation", "proprietary"],
+  }
 ];
 
 function sortAwesomeAI() {
