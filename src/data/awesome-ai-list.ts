@@ -1584,6 +1584,14 @@ const AwesomeAI: AwesomeAI[] = [
     website: "https://notebooklm.google",
     source: null,
     tags: ["researchEducation", "proprietary"],
+  },
+  {
+    title: "voicetoinstrument.com",
+    description: "AI-powered tool to convert voice recordings into instrumental tracks for music production",
+    preview: null,
+    website: "https://voicetoinstrument.com",
+    source: null,
+    tags: ["mediaGeneration", "proprietary"],
   }
 ];
 

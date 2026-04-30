@@ -1,6 +1,8 @@
-# Awesome AI
+# Awesome AI 
 
 A curated list of AI tools, platforms, and resources for developers, creators, and businesses.
+
+  *This file was GENERATED, [Source code](https://github.com/artemshar/awesome-ai/blob/main/src/data/awesome-ai-list.ts)*
 
 ## Tags
 
@@ -147,7 +149,6 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [Beatoven](https://www.beatoven.ai/) - Customizable music generator
 - [Uido](https://www.udio.com/) - Music creation tool
 - [Suno](https://suno.com/) - Prompt-based music creation
-- [voicetoinstrument.com](https://voicetoinstrument.com) - AI-powered tool to convert voice recordings into instrumental tracks for music production.
 - [Unblocked](https://getunblocked.com/) - Knowledge management and collaboration
 - [Fine](https://fine.dev/) - AI-powered development workflow
 - [Grit](https://app.grit.io) - GitHub-integrated maintenance automation
@@ -207,3 +208,4 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [Wandb.ai](https://wandb.ai/site) - The AI developer platform to build AI agents, applications, and models with confidence
 - [n8n](https://n8n.io/) - AI workflow automation to implement multi-step AI agents and integrate apps
 - [Google NotebookLM](https://notebooklm.google) - AI Research Tool & Thinking Partner
+- [voicetoinstrument.com](https://voicetoinstrument.com) - AI-powered tool to convert voice recordings into instrumental tracks for music production

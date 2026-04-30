@@ -71,9 +71,11 @@ function parseAwesomeAI(awesomeAIContent) {
 
 // Function to generate markdown
 function generateMarkdown(tags, awesomeAIItems) {
-  let markdown = `# Awesome AI
+  let markdown = `# Awesome AI 
 
 A curated list of AI tools, platforms, and resources for developers, creators, and businesses.
+
+  *This file was GENERATED, [Source code](https://github.com/artemshar/awesome-ai/blob/main/src/data/awesome-ai-list.ts)*
 
 ## Tags
 
