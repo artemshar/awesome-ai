@@ -1592,6 +1592,14 @@ const AwesomeAI: AwesomeAI[] = [
     website: "https://voicetoinstrument.com",
     source: null,
     tags: ["mediaGeneration", "proprietary"],
+  },
+  {
+    title: "Future AGI",
+    description: "Open-source platform for agent simulation, evaluating, tracing, guarding, and auto-improving AI agents",
+    preview: null,
+    website: "https://futureagi.com/",
+    source: "https://github.com/future-agi/future-agi",
+    tags: ["opensource", "infrastructureOperations", "aiAgentsWorkflows"],
   }
 ];
 
