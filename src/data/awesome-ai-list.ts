@@ -1592,6 +1592,14 @@ const AwesomeAI: AwesomeAI[] = [
     website: "https://voicetoinstrument.com",
     source: null,
     tags: ["mediaGeneration", "proprietary"],
+  },
+  {
+    title: "NotFair",
+    description: "Open-source Claude Code skills for SEO, GEO, Google Ads, and Meta Ads — connects to live data via Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP",
+    preview: null,
+    website: "https://github.com/nowork-studio/NotFair",
+    source: "https://github.com/nowork-studio/NotFair",
+    tags: ["pluginsIntegrations", "opensource", "businessProductivity"],
   }
 ];
 
