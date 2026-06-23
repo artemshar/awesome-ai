@@ -209,3 +209,4 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [n8n](https://n8n.io/) - AI workflow automation to implement multi-step AI agents and integrate apps
 - [Google NotebookLM](https://notebooklm.google) - AI Research Tool & Thinking Partner
 - [voicetoinstrument.com](https://voicetoinstrument.com) - AI-powered tool to convert voice recordings into instrumental tracks for music production
+- [NotFair](https://github.com/nowork-studio/NotFair) - Open-source Claude Code skills for SEO, GEO, Google Ads, and Meta Ads — connects to live data via Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP
