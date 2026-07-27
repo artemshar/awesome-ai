@@ -28,6 +28,7 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [GPT-5](https://openai.com/index/introducing-gpt-5/) - OpenAI's most advanced system
 - [Claude](https://www.anthropic.com/claude) - Anthropic's AI assistant
 - [Gemini](https://deepmind.google/technologies/gemini/) - Google's multimodal model
+- [GPTGeminiGrok.AI](https://trygrokai.asia/) - Browser workspace for GPT, Gemini, Grok, Claude, and AI image workflows
 - [Llama 2](https://ai.meta.com/llama/) - Meta's open source language model
 - [Magic LTM-1](https://magic.dev/blog/ltm-1) - Specialized model for code generation
 - [CodeGeeX](https://codegeex.cn/) - Code-focused language model
