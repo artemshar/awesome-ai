@@ -83,7 +83,7 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 
   // Generate tags section
   Object.entries(tags).forEach(([tagType, tag], index) => {
-    const link = `https://artemshar.space/awesome-ai/?tags=${tagType}`;
+    const link = `https://artemshar.github.io/awesome-ai/?tags=${tagType}`;
     markdown += `${index + 1}. [${tag.label}](${link})\n`;
   });
 

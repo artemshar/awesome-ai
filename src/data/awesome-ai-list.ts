@@ -1600,6 +1600,14 @@ const AwesomeAI: AwesomeAI[] = [
     website: "https://github.com/nowork-studio/NotFair",
     source: "https://github.com/nowork-studio/NotFair",
     tags: ["pluginsIntegrations", "opensource", "businessProductivity"],
+  },
+  {
+    title: "Better Agent",
+    description: "Local workspace for running Claude, Codex, and Gemini coding-agent sessions with parallel forks, delegation, and crash recovery",
+    preview: null,
+    website: "https://github.com/ofekron/better-agent",
+    source: "https://github.com/ofekron/better-agent",
+    tags: ["developmentEnvironment", "aiAgentsWorkflows", "projectManagement"],
   }
 ];
 

@@ -6,22 +6,22 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 
 ## Tags
 
-1. [Our Favorite](https://artemshar.space/awesome-ai/?tags=favorite)
-2. [Open Source](https://artemshar.space/awesome-ai/?tags=opensource)
-3. [Proprietary](https://artemshar.space/awesome-ai/?tags=proprietary)
-4. [Foundation Models](https://artemshar.space/awesome-ai/?tags=foundationModels)
-5. [Development Environment](https://artemshar.space/awesome-ai/?tags=developmentEnvironment)
-6. [Application Development](https://artemshar.space/awesome-ai/?tags=appDevelopment)
-7. [Media Generation](https://artemshar.space/awesome-ai/?tags=mediaGeneration)
-8. [Business & Productivity](https://artemshar.space/awesome-ai/?tags=businessProductivity)
-9. [Infrastructure & Operations](https://artemshar.space/awesome-ai/?tags=infrastructureOperations)
-10. [Research & Education](https://artemshar.space/awesome-ai/?tags=researchEducation)
-11. [Version Control](https://artemshar.space/awesome-ai/?tags=versionControl)
-12. [Code Generation](https://artemshar.space/awesome-ai/?tags=codeGeneration)
-13. [Plugins & Integrations](https://artemshar.space/awesome-ai/?tags=pluginsIntegrations)
-14. [Content Generation](https://artemshar.space/awesome-ai/?tags=contentGeneration)
-15. [Project Management](https://artemshar.space/awesome-ai/?tags=projectManagement)
-16. [AI Agents & Workflows](https://artemshar.space/awesome-ai/?tags=aiAgentsWorkflows)
+1. [Our Favorite](https://artemshar.github.io/awesome-ai/?tags=favorite)
+2. [Open Source](https://artemshar.github.io/awesome-ai/?tags=opensource)
+3. [Proprietary](https://artemshar.github.io/awesome-ai/?tags=proprietary)
+4. [Foundation Models](https://artemshar.github.io/awesome-ai/?tags=foundationModels)
+5. [Development Environment](https://artemshar.github.io/awesome-ai/?tags=developmentEnvironment)
+6. [Application Development](https://artemshar.github.io/awesome-ai/?tags=appDevelopment)
+7. [Media Generation](https://artemshar.github.io/awesome-ai/?tags=mediaGeneration)
+8. [Business & Productivity](https://artemshar.github.io/awesome-ai/?tags=businessProductivity)
+9. [Infrastructure & Operations](https://artemshar.github.io/awesome-ai/?tags=infrastructureOperations)
+10. [Research & Education](https://artemshar.github.io/awesome-ai/?tags=researchEducation)
+11. [Version Control](https://artemshar.github.io/awesome-ai/?tags=versionControl)
+12. [Code Generation](https://artemshar.github.io/awesome-ai/?tags=codeGeneration)
+13. [Plugins & Integrations](https://artemshar.github.io/awesome-ai/?tags=pluginsIntegrations)
+14. [Content Generation](https://artemshar.github.io/awesome-ai/?tags=contentGeneration)
+15. [Project Management](https://artemshar.github.io/awesome-ai/?tags=projectManagement)
+16. [AI Agents & Workflows](https://artemshar.github.io/awesome-ai/?tags=aiAgentsWorkflows)
 
 ## Tools & Resources
 
@@ -210,3 +210,4 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [Google NotebookLM](https://notebooklm.google) - AI Research Tool & Thinking Partner
 - [voicetoinstrument.com](https://voicetoinstrument.com) - AI-powered tool to convert voice recordings into instrumental tracks for music production
 - [NotFair](https://github.com/nowork-studio/NotFair) - Open-source Claude Code skills for SEO, GEO, Google Ads, and Meta Ads — connects to live data via Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP
+- [Better Agent](https://github.com/ofekron/better-agent) - Local workspace for running Claude, Codex, and Gemini coding-agent sessions with parallel forks, delegation, and crash recovery
