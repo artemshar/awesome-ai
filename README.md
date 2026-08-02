@@ -211,3 +211,4 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [voicetoinstrument.com](https://voicetoinstrument.com) - AI-powered tool to convert voice recordings into instrumental tracks for music production
 - [NotFair](https://github.com/nowork-studio/NotFair) - Open-source Claude Code skills for SEO, GEO, Google Ads, and Meta Ads — connects to live data via Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP
 - [Better Agent](https://github.com/ofekron/better-agent) - Local workspace for running Claude, Codex, and Gemini coding-agent sessions with parallel forks, delegation, and crash recovery
+- [Rao Edits](https://raoedits.top/) - AI-powered image generation and photo editing platform for creating and transforming visual content
