@@ -1608,7 +1608,15 @@ const AwesomeAI: AwesomeAI[] = [
     website: "https://github.com/ofekron/better-agent",
     source: "https://github.com/ofekron/better-agent",
     tags: ["developmentEnvironment", "aiAgentsWorkflows", "projectManagement"],
-  }
+  },
+  {
+    title: "Rao Edits",
+    description: "AI-powered image generation and photo editing platform for creating and transforming visual content",
+    preview: null,
+    website: "https://raoedits.top/",
+    source: null,
+    tags: ["mediaGeneration", "contentGeneration", "proprietary"],
+  },
 ];
 
 function sortAwesomeAI() {
