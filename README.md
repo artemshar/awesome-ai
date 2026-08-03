@@ -28,7 +28,6 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [GPT-5](https://openai.com/index/introducing-gpt-5/) - OpenAI's most advanced system
 - [Claude](https://www.anthropic.com/claude) - Anthropic's AI assistant
 - [Gemini](https://deepmind.google/technologies/gemini/) - Google's multimodal model
-- [GPTGeminiGrok.AI](https://trygrokai.asia/) - Browser workspace for GPT, Gemini, Grok, Claude, and AI image workflows
 - [Llama 2](https://ai.meta.com/llama/) - Meta's open source language model
 - [Magic LTM-1](https://magic.dev/blog/ltm-1) - Specialized model for code generation
 - [CodeGeeX](https://codegeex.cn/) - Code-focused language model
@@ -213,3 +212,4 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [NotFair](https://github.com/nowork-studio/NotFair) - Open-source Claude Code skills for SEO, GEO, Google Ads, and Meta Ads — connects to live data via Google Ads MCP, Meta Ads MCP, Google Search Console MCP, and Google Analytics (GA4) MCP
 - [Better Agent](https://github.com/ofekron/better-agent) - Local workspace for running Claude, Codex, and Gemini coding-agent sessions with parallel forks, delegation, and crash recovery
 - [Rao Edits](https://raoedits.top/) - AI-powered image generation and photo editing platform for creating and transforming visual content
+- [GPTGeminiGrok.AI](https://trygrokai.asia/) - Browser workspace for GPT, Gemini, Grok, Claude, and AI image workflows

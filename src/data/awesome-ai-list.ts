@@ -1617,6 +1617,14 @@ const AwesomeAI: AwesomeAI[] = [
     source: null,
     tags: ["mediaGeneration", "contentGeneration", "proprietary"],
   },
+  {
+    title: "GPTGeminiGrok.AI",
+    description: "Browser workspace for GPT, Gemini, Grok, Claude, and AI image workflows",
+    preview: null,
+    website: "https://trygrokai.asia/",
+    source: null,
+    tags: ["businessProductivity", "mediaGeneration", "proprietary"],
+  },
 ];
 
 function sortAwesomeAI() {
