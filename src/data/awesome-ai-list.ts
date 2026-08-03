@@ -1625,6 +1625,14 @@ const AwesomeAI: AwesomeAI[] = [
     source: null,
     tags: ["businessProductivity", "mediaGeneration", "proprietary"],
   },
+  {
+    title: "Humanize-Text",
+    description: "Open-source Python toolkit for multi-stage rewriting of AI-assisted drafts",
+    preview: null,
+    website: "https://github.com/lynote-ai/humanize-text",
+    source: "https://github.com/lynote-ai/humanize-text",
+    tags: ["opensource", "contentGeneration"],
+  },
 ];
 
 function sortAwesomeAI() {
