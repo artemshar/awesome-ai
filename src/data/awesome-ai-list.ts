@@ -879,6 +879,14 @@ const AwesomeAI: AwesomeAI[] = [
     tags: ["mediaGeneration", "proprietary"],
   },
   {
+    title: "AIImageChanger.app",
+    description: "Browser-based AI image editor for prompt-driven changes",
+    preview: null,
+    website: "https://aiimagechanger.app/",
+    source: null,
+    tags: ["mediaGeneration", "proprietary", "contentGeneration"],
+  },
+  {
     title: "Lensa by Prisma AI",
     description: "AI photo editing",
     preview: null,
