@@ -214,3 +214,4 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [Rao Edits](https://raoedits.top/) - AI-powered image generation and photo editing platform for creating and transforming visual content
 - [GPTGeminiGrok.AI](https://trygrokai.asia/) - Browser workspace for GPT, Gemini, Grok, Claude, and AI image workflows
 - [Humanize-Text](https://github.com/lynote-ai/humanize-text) - Open-source Python toolkit for multi-stage rewriting of AI-assisted drafts
+- [Autoposting](https://autoposting.ai) - AI social media manager that writes in your voice, clips long video, and schedules to five networks
