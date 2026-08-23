@@ -448,6 +448,14 @@ const AwesomeAI: AwesomeAI[] = [
   },
   // Testing & Quality Assurance
   {
+    title: "Agent QA",
+    description: "Source-available QA agent for natural-language web and mobile tests with persistent test memory and self-healing flows",
+    preview: null,
+    website: "https://github.com/vostride/agent-qa",
+    source: null,
+    tags: ["developmentEnvironment", "aiAgentsWorkflows"],
+  },
+  {
     title: "OctoMind",
     description: "Auto-maintenance and generated end-to-end tests",
     preview: null,

@@ -69,6 +69,7 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [IBM watsonx Code Assistant](https://www.ibm.com/products/watsonx-code-assistant-z) - Mainframe modernization
 - [EasyCode](https://www.easycode.ai/) - GPT-4 powered VS Code extension
 - [Kilo Code](https://kilocode.ai) - Open source VS Code assistant
+- [Agent QA](https://github.com/vostride/agent-qa) - Source-available QA agent for natural-language web and mobile tests with persistent test memory and self-healing flows
 - [OctoMind](https://octomind.dev) - Auto-maintenance and generated end-to-end tests
 - [Carbonate](https://carbonate.dev/) - Natural language end-to-end testing
 - [Meticulous.ai](https://www.meticulous.ai/) - Auto-generated and maintained end-to-end tests
