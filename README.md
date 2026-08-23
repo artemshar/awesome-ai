@@ -127,6 +127,7 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [Sora](https://sora.com/) - AI video generation
 - [Runway](https://runwayml.com/) - Generative AI video tools
 - [Descript](https://www.descript.com/) - AI-powered video editing
+- [videos.social](https://videos.social/?utm_source=artemshar-awesome-ai&utm_medium=directory&utm_campaign=listing-wave-d) - Turn blogs, PDFs, and prompts into editable faceless videos
 - [Synthesia](https://www.synthesia.io/) - AI video generation with avatars
 - [Wondershare Filmora](https://filmora.wondershare.com/) - Video polishing tools
 - [Capsule](https://www.capsule.video/) - Video production workflow

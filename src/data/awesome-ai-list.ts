@@ -920,6 +920,14 @@ const AwesomeAI: AwesomeAI[] = [
     tags: ["mediaGeneration", "proprietary"],
   },
   {
+    title: "videos.social",
+    description: "Turn blogs, PDFs, and prompts into editable faceless videos",
+    preview: null,
+    website: "https://videos.social/?utm_source=artemshar-awesome-ai&utm_medium=directory&utm_campaign=listing-wave-d",
+    source: null,
+    tags: ["mediaGeneration", "contentGeneration", "proprietary"],
+  },
+  {
     title: "Synthesia",
     description: "AI video generation with avatars",
     preview: null,
