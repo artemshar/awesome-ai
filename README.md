@@ -24,6 +24,7 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 16. [AI Agents & Workflows](https://artemshar.github.io/awesome-ai/?tags=aiAgentsWorkflows)
 
 ## Tools & Resources
+- [NextReset](https://nextreset.ai/) - Independent, source-linked Codex reset history and official AI incident references, with a browser-local personal timer; no private account access or timing guarantees.
 
 - [GPT-5](https://openai.com/index/introducing-gpt-5/) - OpenAI's most advanced system
 - [Claude](https://www.anthropic.com/claude) - Anthropic's AI assistant
