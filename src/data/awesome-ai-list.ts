@@ -968,6 +968,14 @@ const AwesomeAI: AwesomeAI[] = [
     tags: ["mediaGeneration", "businessProductivity", "contentGeneration", "proprietary"],
   },
   {
+    title: "shortshort",
+    description: "Turn one long video into vertical 9:16 shorts with word-by-word captions",
+    preview: null,
+    website: "https://www.shortshort.io",
+    source: null,
+    tags: ["mediaGeneration", "contentGeneration", "proprietary"],
+  },
+  {
     title: "Peech",
     description: "Content marketing tools",
     preview: null,
