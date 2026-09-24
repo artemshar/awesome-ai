@@ -215,4 +215,5 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [Better Agent](https://github.com/ofekron/better-agent) - Local workspace for running Claude, Codex, and Gemini coding-agent sessions with parallel forks, delegation, and crash recovery
 - [Rao Edits](https://raoedits.top/) - AI-powered image generation and photo editing platform for creating and transforming visual content
 - [GPTGeminiGrok.AI](https://trygrokai.asia/) - Browser workspace for GPT, Gemini, Grok, Claude, and AI image workflows
+- [OrkasVideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio) - MIT-licensed, local-first TypeScript CLI and MCP toolkit for coding agents to compose, edit, generate, and assemble videos from editable plan.json timelines
 - [Humanize-Text](https://github.com/lynote-ai/humanize-text) - Open-source Python toolkit for multi-stage rewriting of AI-assisted drafts

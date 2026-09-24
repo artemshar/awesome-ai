@@ -1642,6 +1642,14 @@ const AwesomeAI: AwesomeAI[] = [
     tags: ["businessProductivity", "mediaGeneration", "proprietary"],
   },
   {
+    title: "OrkasVideoStudio",
+    description: "MIT-licensed, local-first TypeScript CLI and MCP toolkit for coding agents to compose, edit, generate, and assemble videos from editable plan.json timelines",
+    preview: null,
+    website: "https://github.com/Orkas-AI/Orkas-VideoStudio",
+    source: "https://github.com/Orkas-AI/Orkas-VideoStudio",
+    tags: ["opensource", "mediaGeneration", "pluginsIntegrations"],
+  },
+  {
     title: "Humanize-Text",
     description: "Open-source Python toolkit for multi-stage rewriting of AI-assisted drafts",
     preview: null,
