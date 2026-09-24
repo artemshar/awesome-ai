@@ -1642,6 +1642,14 @@ const AwesomeAI: AwesomeAI[] = [
     tags: ["businessProductivity", "mediaGeneration", "proprietary"],
   },
   {
+    title: "Orkas",
+    description: "Open-source, local-first desktop AI workforce with a Commander that coordinates specialist agents through one chat",
+    preview: null,
+    website: "https://orkas.ai/?source=gh_artemshar",
+    source: "https://github.com/Orkas-AI/Orkas",
+    tags: ["opensource", "aiAgentsWorkflows", "businessProductivity"],
+  },
+  {
     title: "Humanize-Text",
     description: "Open-source Python toolkit for multi-stage rewriting of AI-assisted drafts",
     preview: null,
