@@ -133,6 +133,7 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [Wondershare Filmora](https://filmora.wondershare.com/) - Video polishing tools
 - [Capsule](https://www.capsule.video/) - Video production workflow
 - [invideo AI](https://invideo.io/) - Social media video creation
+- [shortshort](https://www.shortshort.io) - Turn one long video into vertical 9:16 shorts with word-by-word captions
 - [Peech](https://www.peech-ai.com) - Content marketing tools
 - [Vyond](https://www.vyond.com/) - Animated video generation
 - [revid.ai](https://www.revid.ai/) - Video templates
