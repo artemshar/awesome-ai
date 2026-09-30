@@ -1649,6 +1649,14 @@ const AwesomeAI: AwesomeAI[] = [
     source: "https://github.com/lynote-ai/humanize-text",
     tags: ["opensource", "contentGeneration"],
   },
+  {
+    title: "SocialEcho",
+    description: "AI-assisted workspace for social media publishing, engagement, listening, and analytics across multiple networks",
+    preview: null,
+    website: "https://www.socialecho.net/",
+    source: null,
+    tags: ["proprietary", "businessProductivity", "contentGeneration"],
+  },
 ];
 
 function sortAwesomeAI() {
