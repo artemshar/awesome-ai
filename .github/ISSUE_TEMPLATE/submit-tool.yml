@@ -1,0 +1,87 @@
+name: Submit a tool
+description: Suggest a new AI tool or product for the Awesome AI list
+title: "[Add] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing! Fill in the fields below — humans and agents both welcome.
+
+        Maintainers will add the entry to `src/data/awesome-ai-list.ts` (the README is generated from that file).
+
+        Prefer a PR instead? Edit `src/data/awesome-ai-list.ts`, run `npm run generate-md`, and open a PR. Do **not** edit `README.md` only.
+
+  - type: input
+    id: title
+    attributes:
+      label: Tool name
+      description: Display name as it should appear in the list
+      placeholder: e.g. PhotoOmni
+    validations:
+      required: true
+
+  - type: input
+    id: website
+    attributes:
+      label: Website URL
+      description: Official product or project URL
+      placeholder: https://
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description
+      description: 1–2 sentences. What it does (plain language, no hype)
+      placeholder: e.g. Passport and visa photo preparation with country-specific compliance checks
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source code URL (optional)
+      description: GitHub/GitLab link if open source. Leave empty if proprietary.
+      placeholder: https://github.com/
+
+  - type: dropdown
+    id: license-type
+    attributes:
+      label: Open source or proprietary?
+      options:
+        - Proprietary
+        - Open Source
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: tags
+    attributes:
+      label: Categories
+      description: Pick 1–3 that fit best (skip "Our Favorite" — maintainers add that)
+      options:
+        - label: Foundation Models
+        - label: Development Environment
+        - label: Application Development
+        - label: Media Generation
+        - label: Business & Productivity
+        - label: Infrastructure & Operations
+        - label: Research & Education
+        - label: Version Control
+        - label: Code Generation
+        - label: Plugins & Integrations
+        - label: Content Generation
+        - label: Project Management
+        - label: AI Agents & Workflows
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I checked this tool is not already in the list
+          required: true
+        - label: The website URL works and is publicly accessible
+          required: true

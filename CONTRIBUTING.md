@@ -1,142 +1,107 @@
 # Contributing to Awesome AI
 
-Thank you for your interest in contributing to Awesome AI! This document will guide you through the process of adding new AI tools and resources to our curated collection.
+Thanks for helping grow this curated list of AI tools, platforms, and resources. Humans and coding agents are both welcome.
 
-## How to Contribute
+## Easiest way: submit an issue
 
-### 1. Add New Items to the Awesome AI List
+Use the **[Submit a tool](https://github.com/artemshar/awesome-ai/issues/new?template=submit-tool.yml)** form.
 
-The main data file is located at `src/data/awesome-ai-list.ts`. To add a new AI tool or resource:
+Fill in name, website, short description, and categories. Maintainers will add the entry to the source list and regenerate the README.
 
-#### 1.1 Required Fields
+## Pull requests
 
-Add a new object to the `AwesomeAI` array with the following required fields:
+If you prefer a PR (or you're an agent shipping a ready change), edit the **source file**, not only the README.
 
-- **`title`** - The name of the AI tool/resource
-- **`description`** - A clear, concise description (use your own words or copy from the official website)
-- **`website`** - The most reliable and official URL for the project
-- **`tags`** - An array of relevant tags from the available `TagType` options
+> **Important:** `README.md` is **generated**. Edits to README alone will be overwritten. Always update `src/data/awesome-ai-list.ts`.
 
-#### 1.2 Optional Fields
+### 1. Add the entry
 
-- **`preview`** - An image URL for the tool (set to `null` to use our serverless screenshot service)
-- **`source`** - GitHub/GitLab URL if the project is open source (set to `null` if proprietary)
+Append an object to the `AwesomeAI` array in [`src/data/awesome-ai-list.ts`](src/data/awesome-ai-list.ts):
 
-#### 1.3 Available Tags
+| Field | Required | Notes |
+|-------|----------|--------|
+| `title` | yes | Display name |
+| `description` | yes | 1–2 clear sentences |
+| `website` | yes | Official URL |
+| `tags` | yes | From `TagType` (see below) |
+| `preview` | no | Image URL, or `null` for auto screenshot |
+| `source` | no | Repo URL if open source, otherwise `null` |
 
-Make sure to use only tags that exist in the `TagType` union:
-
-- `favorite` - Our top recommendations
-- `opensource` - Open source tools
-- `proprietary` - Proprietary software
-- `foundationModels` - Core AI models and APIs
-- `developmentEnvironment` - IDEs, code assistants, testing, documentation
-- `appDevelopment` - Full-stack generators, UI/UX tools, backend platforms
-- `mediaGeneration` - Image, video, and audio generation tools
-- `businessProductivity` - Business and productivity tools
-- `infrastructureOperations` - Model serving, deployment, security
-- `researchEducation` - Research tools and educational resources
-- `versionControl` - Git clients, PR tools, code review
-- `codeGeneration` - Code generators and shell tools
-- `pluginsIntegrations` - Development agents and integrations
-- `contentGeneration` - Content creation tools
-- `projectManagement` - Project management and workflow tools
-
-#### 1.4 Example Entry
+Example:
 
 ```typescript
 {
   title: "Example AI Tool",
   description: "A powerful AI tool that helps developers write better code",
   website: "https://example-ai-tool.com",
-  preview: null, // Will use our screenshot service
-  source: "https://github.com/example/ai-tool", // Open source
-  tags: ["opensource", "developmentEnvironment", "codeGeneration"]
+  preview: null,
+  source: "https://github.com/example/ai-tool",
+  tags: ["opensource", "developmentEnvironment", "codeGeneration"],
 }
 ```
 
-### 2. Generate Updated Documentation
+### 2. Available tags
 
-After adding your new items, regenerate the project documentation:
+Use only tags from `TagType` in [`src/data/types.ts`](src/data/types.ts):
+
+- `opensource` / `proprietary` — pick one
+- `foundationModels` — core models and APIs
+- `developmentEnvironment` — IDEs, assistants, testing, docs
+- `appDevelopment` — full-stack / UI / backend generators
+- `mediaGeneration` — image, video, audio
+- `businessProductivity` — business and productivity
+- `infrastructureOperations` — serving, deploy, security
+- `researchEducation` — research and learning
+- `versionControl` — git, PRs, code review
+- `codeGeneration` — generators and CLI helpers
+- `pluginsIntegrations` — plugins and integrations
+- `contentGeneration` — text and content tools
+- `projectManagement` — tasks and workflows
+- `aiAgentsWorkflows` — agents and automation
+- `favorite` — maintainer-only; do not add in submissions
+
+Aim for 2–4 tags per item.
+
+### 3. Regenerate the README
 
 ```bash
 npm run generate-md
 ```
 
-This command will:
-- Parse the updated `awesome-ai-list.ts` file
-- Generate a new `README.md` with all current items
-- Update the tags and tools sections
+This rewrites `README.md` from `awesome-ai-list.ts`. Include both files in your PR.
 
-### 3. Submit Your Changes
+### 4. Open the PR
 
-1. **Commit your changes:**
-   ```bash
-   git add .
-   git commit -m "Add [Tool Name] to Awesome AI list"
-   ```
+```bash
+git add src/data/awesome-ai-list.ts README.md
+git commit -m "Add [Tool Name] to Awesome AI list"
+```
 
-2. **Create a pull request** with a descriptive title and description
-3. **Wait for review** - we'll get back to you soon! 
+Use a clear title like `Add [Tool Name] to Awesome AI list`.
 
-## Guidelines for Contributions
+## Guidelines
 
-### Quality Standards
+- Skip duplicates — search the list first
+- Prefer accurate, up-to-date links
+- Keep descriptions short and factual (avoid marketing hype)
+- Choose tags that help discovery
 
-- **Accuracy**: Ensure all information is correct and up-to-date
-- **Relevance**: Only add tools that are genuinely useful for AI development/usage
-- **Completeness**: Fill in all required fields with meaningful information
-- **Uniqueness**: Avoid duplicate entries
+## Local development
 
-### Description Guidelines
+```bash
+git clone https://github.com/artemshar/awesome-ai.git
+cd awesome-ai
+npm install
+npm start          # site preview
+npm run generate-md
+```
 
-- Keep descriptions concise (1-2 sentences)
-- Focus on what makes the tool unique or valuable
-- Use clear, professional language
-- Avoid marketing hype or subjective claims
+## Need help?
 
-### Tag Selection
+- **[Submit a tool](https://github.com/artemshar/awesome-ai/issues/new?template=submit-tool.yml)** — suggest a listing
+- **Issues** — bugs and site improvements
+- **Pull requests** — ready-made list updates welcome
 
-- Choose the most relevant tags (2-4 tags per item is ideal)
-- Use `favorite` sparingly - only for exceptional tools
-- Ensure `opensource`/`proprietary` tags are accurate
-- Select tags that help users discover the tool
-
-## Development Setup
-
-If you want to work on the project locally:
-
-1. **Clone the repository:**
-   ```bash
-   git clone [repository-url]
-   cd awesome-ai
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Start the development server:**
-   ```bash
-   npm start
-   ```
-
-4. **Generate documentation:**
-   ```bash
-   npm run generate-md
-   ```
-
-## Need Help?
-
-- **Issues**: Create an issue for bugs or feature requests
-- **Discussions**: Use GitHub Discussions for questions and ideas
-- **Pull Requests**: We welcome all contributions, big and small!
-
-## Thank You! 🎉
-
-Your contribution will allow us to better hands-control robots and Skynet ;)
+Thanks for contributing — may your robots stay friendly.
 
 *You don't need to be afraid of animals, you just need to be able to get along with them.*
-
----

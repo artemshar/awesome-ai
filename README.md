@@ -2,7 +2,11 @@
 
 A curated list of AI tools, platforms, and resources for developers, creators, and businesses.
 
-  *This file was GENERATED, [Source code](https://github.com/artemshar/awesome-ai/blob/main/src/data/awesome-ai-list.ts)*
+  *This file was GENERATED from [`src/data/awesome-ai-list.ts`](https://github.com/artemshar/awesome-ai/blob/main/src/data/awesome-ai-list.ts) — do not edit the README directly.*
+
+## Contribute
+
+Add a tool via the **[Submit a tool](https://github.com/artemshar/awesome-ai/issues/new?template=submit-tool.yml)** issue form, or open a PR that updates `src/data/awesome-ai-list.ts` and runs `npm run generate-md`. See [CONTRIBUTING.md](https://github.com/artemshar/awesome-ai/blob/main/CONTRIBUTING.md).
 
 ## Tags
 
@@ -40,6 +44,7 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [Perplexity AI](https://www.perplexity.ai/) - AI-powered search engine and research assistant
 - [DeepSeek](https://api-docs.deepseek.com/) - DeepSeek creators
 - [Cursor](https://www.cursor.com/) - AI-powered IDE with chat, edit, generate and debug features
+- [Kimi K3](https://github.com/MoonshotAI/Kimi-K3) - Open-weight multimodal agentic model for long-horizon coding, knowledge work, and reasoning
 - [Replit](https://replit.com/) - Web-based IDE with cloud environments and AI assistance
 - [Theia IDE](https://theia-ide.org/) - Extensible open-source IDE with AI features
 - [trae](https://www.trae.ai/) - Adaptive AI IDE for enhanced productivity

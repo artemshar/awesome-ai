@@ -201,7 +201,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://api-docs.deepseek.com/",
     source: null,
-    tags: ["foundationModels", "opensource"],
+    tags: ["foundationModels", "opensource", "favorite"],
   },
   // AI Development Tools
   // Integrated Development Environments (IDEs)
@@ -212,6 +212,14 @@ const AwesomeAI: AwesomeAI[] = [
     website: "https://www.cursor.com/",
     source: null,
     tags: ["developmentEnvironment", "proprietary", "favorite"],
+  },
+  {
+    title: "Kimi K3",
+    description: "Open-weight multimodal agentic model for long-horizon coding, knowledge work, and reasoning",
+    preview: null,
+    website: "https://github.com/MoonshotAI/Kimi-K3",
+    source: "https://github.com/MoonshotAI/Kimi-K3",
+    tags: ["developmentEnvironment", "opensource"],
   },
   {
     title: "Replit",
@@ -616,7 +624,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://lovable.dev/",
     source: null,
-    tags: ["appDevelopment", "proprietary", "favorite"],
+    tags: ["appDevelopment", "proprietary"],
   },
   {
     title: "SoftGen",
@@ -712,7 +720,7 @@ const AwesomeAI: AwesomeAI[] = [
     preview: null,
     website: "https://blog.jetbrains.com/kineto/2025/08/make-your-ideas-clickable-with-kineto-by-jetbrains/",
     source: null,
-    tags: ["appDevelopment", "proprietary", "favorite"],
+    tags: ["appDevelopment", "proprietary"],
   },
   // UI/UX Generators
   {
