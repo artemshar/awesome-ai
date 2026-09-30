@@ -221,3 +221,5 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [OrkasVideoStudio](https://github.com/Orkas-AI/Orkas-VideoStudio) - MIT-licensed, local-first TypeScript CLI and MCP toolkit for coding agents to compose, edit, generate, and assemble videos from editable plan.json timelines
 - [Humanize-Text](https://github.com/lynote-ai/humanize-text) - Open-source Python toolkit for multi-stage rewriting of AI-assisted drafts
 - [SocialEcho](https://www.socialecho.net/) - AI-assisted workspace for social media publishing, engagement, listening, and analytics across multiple networks
+- [Autoposting](https://autoposting.ai) - AI social media manager that writes in your voice, clips long video, and schedules to five networks
+- [NextReset](https://nextreset.ai/) - Independent, source-linked Codex reset history and official AI incident references, with a browser-local personal timer; no private account access or timing guarantees

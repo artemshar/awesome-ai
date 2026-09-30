@@ -1689,6 +1689,22 @@ const AwesomeAI: AwesomeAI[] = [
     source: null,
     tags: ["proprietary", "businessProductivity", "contentGeneration"],
   },
+  {
+    title: "Autoposting",
+    description: "AI social media manager that writes in your voice, clips long video, and schedules to five networks",
+    preview: null,
+    website: "https://autoposting.ai",
+    source: null,
+    tags: ["proprietary", "businessProductivity", "contentGeneration", "mediaGeneration"],
+  },
+  {
+    title: "NextReset",
+    description: "Independent, source-linked Codex reset history and official AI incident references, with a browser-local personal timer; no private account access or timing guarantees",
+    preview: null,
+    website: "https://nextreset.ai/",
+    source: null,
+    tags: ["proprietary", "researchEducation", "developmentEnvironment"],
+  },
 ];
 
 function sortAwesomeAI() {
