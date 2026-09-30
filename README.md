@@ -124,6 +124,7 @@ A curated list of AI tools, platforms, and resources for developers, creators, a
 - [DragGAN](https://github.com/XingangPan/DragGAN) - Interactive image manipulation
 - [neural.love/ai-art-generator](https://neural.love/ai-art-generator) - AI art generation
 - [Lensa by Prisma AI](https://prisma-ai.com/lensa) - AI photo editing
+- [PhotoOmni](https://photoomni.com/en) - Passport and visa photo preparation with country-specific compliance checks and optional expert review
 - [Imagen](https://imagen.research.google/) - Google's image generation model
 - [Sora](https://sora.com/) - AI video generation
 - [Runway](https://runwayml.com/) - Generative AI video tools

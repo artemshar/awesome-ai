@@ -895,6 +895,14 @@ const AwesomeAI: AwesomeAI[] = [
     tags: ["mediaGeneration", "proprietary"],
   },
   {
+    title: "PhotoOmni",
+    description: "Passport and visa photo preparation with country-specific compliance checks and optional expert review",
+    preview: null,
+    website: "https://photoomni.com/en",
+    source: null,
+    tags: ["mediaGeneration", "proprietary"],
+  },
+  {
     title: "Imagen",
     description: "Google's image generation model",
     preview: null,
