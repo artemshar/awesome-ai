@@ -1712,6 +1712,13 @@ const AwesomeAI: AwesomeAI[] = [
     website: "https://nextreset.ai/",
     source: null,
     tags: ["proprietary", "researchEducation", "developmentEnvironment"],
+  },  {
+    title: "YYLO",
+    description: "Open source npm CLI that orchestrates coding agents across git worktrees with Kanban task management, typed merge flows, and agent skill packs",
+    preview: null,
+    website: "https://github.com/yylo-dev/yylo",
+    source: "https://github.com/yylo-dev/yylo",
+    tags: ["developmentEnvironment", "aiAgentsWorkflows", "projectManagement"],
   },
 ];
 
