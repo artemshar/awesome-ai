@@ -228,3 +228,4 @@ Add a tool via the **[Submit a tool](https://github.com/artemshar/awesome-ai/iss
 - [SocialEcho](https://www.socialecho.net/) - AI-assisted workspace for social media publishing, engagement, listening, and analytics across multiple networks
 - [Autoposting](https://autoposting.ai) - AI social media manager that writes in your voice, clips long video, and schedules to five networks
 - [NextReset](https://nextreset.ai/) - Independent, source-linked Codex reset history and official AI incident references, with a browser-local personal timer; no private account access or timing guarantees
+- [YYLO](https://github.com/yylo-dev/yylo) - Open source npm CLI that orchestrates coding agents across git worktrees with Kanban task management, typed merge flows, and agent skill packs
