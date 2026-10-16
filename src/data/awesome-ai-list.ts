@@ -1720,6 +1720,14 @@ const AwesomeAI: AwesomeAI[] = [
     source: "https://github.com/yylo-dev/yylo",
     tags: ["developmentEnvironment", "aiAgentsWorkflows", "projectManagement"],
   },
+  {
+    title: "CurlShot",
+    description: "Screenshot API with a hosted MCP server that lets AI agents capture rendered web pages as PNG/JPEG/WebP images, PDFs, or scrolling videos; free plan with 100 screenshots per month",
+    preview: null,
+    website: "https://curlshot.com",
+    source: null,
+    tags: ["proprietary", "pluginsIntegrations", "aiAgentsWorkflows"],
+  },
 ];
 
 function sortAwesomeAI() {
