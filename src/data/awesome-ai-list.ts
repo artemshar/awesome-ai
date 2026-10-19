@@ -1719,6 +1719,13 @@ const AwesomeAI: AwesomeAI[] = [
     website: "https://github.com/yylo-dev/yylo",
     source: "https://github.com/yylo-dev/yylo",
     tags: ["developmentEnvironment", "aiAgentsWorkflows", "projectManagement"],
+  },  {
+    title: "Aident Loadout",
+    description: "Hosted MCP server and CLI that gives Claude Code, Codex, Cursor and other agents app connections and 400+ Skills, with credentials kept in a Vault and every action written to an audit log",
+    preview: null,
+    website: "https://aident.ai",
+    source: null,
+    tags: ["proprietary", "aiAgentsWorkflows", "pluginsIntegrations"],
   },
 ];
 
