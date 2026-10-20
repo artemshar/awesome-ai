@@ -1720,6 +1720,14 @@ const AwesomeAI: AwesomeAI[] = [
     source: "https://github.com/yylo-dev/yylo",
     tags: ["developmentEnvironment", "aiAgentsWorkflows", "projectManagement"],
   },
+  {
+    title: "Handy",
+    description: "Open-source, offline speech-to-text desktop app that transcribes locally and pastes the text into any field",
+    preview: null,
+    website: "https://handy.computer",
+    source: "https://github.com/cjpais/handy",
+    tags: ["opensource", "businessProductivity", "contentGeneration"],
+  },
 ];
 
 function sortAwesomeAI() {
