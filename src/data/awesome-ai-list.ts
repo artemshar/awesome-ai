@@ -1808,6 +1808,14 @@ const AwesomeAI: AwesomeAI[] = [
     source: "https://github.com/langflow-ai/langflow",
     tags: ["opensource", "aiAgentsWorkflows", "pluginsIntegrations"],
   },
+  {
+    title: "PlaceCall",
+    description: "AI agent that makes real phone calls to US businesses for reservations, appointments and quotes and returns the outcome, transcript and recording; available as a remote MCP server, REST API and agent skill",
+    preview: null,
+    website: "https://voygr.tech/placecall/",
+    source: "https://github.com/voygr-tech/placecall",
+    tags: ["proprietary", "aiAgentsWorkflows", "businessProductivity", "pluginsIntegrations"],
+  },
 ];
 
 function sortAwesomeAI() {
