@@ -134,6 +134,7 @@ Add a tool via the **[Submit a tool](https://github.com/artemshar/awesome-ai/iss
 - [Sora](https://sora.com/) - AI video generation
 - [Runway](https://runwayml.com/) - Generative AI video tools
 - [Descript](https://www.descript.com/) - AI-powered video editing
+- [ReelWorkshop](https://reelworkshop.com/) - Browser compilation maker: import your own clips, arrange/trim, preview, export vertical 9:16 H.264. Editing & preview free; finished export on Starter
 - [videos.social](https://videos.social/?utm_source=artemshar-awesome-ai&utm_medium=directory&utm_campaign=listing-wave-d) - Turn blogs, PDFs, and prompts into editable faceless videos
 - [Synthesia](https://www.synthesia.io/) - AI video generation with avatars
 - [Wondershare Filmora](https://filmora.wondershare.com/) - Video polishing tools
