@@ -230,3 +230,12 @@ Add a tool via the **[Submit a tool](https://github.com/artemshar/awesome-ai/iss
 - [NextReset](https://nextreset.ai/) - Independent, source-linked Codex reset history and official AI incident references, with a browser-local personal timer; no private account access or timing guarantees
 - [YYLO](https://github.com/yylo-dev/yylo) - Open source npm CLI that orchestrates coding agents across git worktrees with Kanban task management, typed merge flows, and agent skill packs
 - [Handy](https://handy.computer) - Open-source, offline speech-to-text desktop app that transcribes locally and pastes the text into any field
+- [Pulse](https://pulsecorp.co) - AI-moderated market research platform that runs customer interviews and turns them into structured reports
+- [Xiaolan Assistant](https://www.bluedoai.com/tools/) - Windows desktop assistant for multi-step tasks across files, scripts, and apps, with optional hosted or local models
+- [CareJobs](https://carejobs.now/tools) - Free AI writing tools for healthcare workers, including cover letters, resume bullets, interview practice, and offer emails
+- [Tale](https://tale.dev) - Self-hosted team workspace for assigning tasks to AI agents, sharing project context, and reviewing their deliverables
+- [Pixonara](https://pixonara.com) - Prompt gallery and browser tool for generating and adapting AI images and videos
+- [Aident Loadout](https://aident.ai) - Hosted MCP server and CLI that gives coding agents app connections and skills, with credentials kept in a vault and actions written to an audit log
+- [CurlShot](https://curlshot.com) - Screenshot API with a hosted MCP server that lets AI agents capture rendered web pages as images, PDFs, or scrolling videos
+- [AIImageChanger.app](https://aiimagechanger.app/) - Browser-based AI image editor for prompt-driven changes to uploaded photos
+- [Future AGI](https://futureagi.com/) - Open-source platform for simulating, evaluating, tracing, and guardrailing LLM and AI agent applications
