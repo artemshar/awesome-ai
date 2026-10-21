@@ -1800,6 +1800,14 @@ const AwesomeAI: AwesomeAI[] = [
     source: "https://github.com/future-agi/future-agi",
     tags: ["opensource", "infrastructureOperations", "aiAgentsWorkflows"],
   },
+  {
+    title: "Langflow",
+    description: "Open-source visual builder for designing and running AI agents and workflows, including a desktop app",
+    preview: null,
+    website: "https://www.langflow.org/desktop/",
+    source: "https://github.com/langflow-ai/langflow",
+    tags: ["opensource", "aiAgentsWorkflows", "pluginsIntegrations"],
+  },
 ];
 
 function sortAwesomeAI() {

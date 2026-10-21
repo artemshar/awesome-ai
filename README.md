@@ -239,3 +239,4 @@ Add a tool via the **[Submit a tool](https://github.com/artemshar/awesome-ai/iss
 - [CurlShot](https://curlshot.com) - Screenshot API with a hosted MCP server that lets AI agents capture rendered web pages as images, PDFs, or scrolling videos
 - [AIImageChanger.app](https://aiimagechanger.app/) - Browser-based AI image editor for prompt-driven changes to uploaded photos
 - [Future AGI](https://futureagi.com/) - Open-source platform for simulating, evaluating, tracing, and guardrailing LLM and AI agent applications
+- [Langflow](https://www.langflow.org/desktop/) - Open-source visual builder for designing and running AI agents and workflows, including a desktop app
