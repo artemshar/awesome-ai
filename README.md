@@ -240,3 +240,4 @@ Add a tool via the **[Submit a tool](https://github.com/artemshar/awesome-ai/iss
 - [AIImageChanger.app](https://aiimagechanger.app/) - Browser-based AI image editor for prompt-driven changes to uploaded photos
 - [Future AGI](https://futureagi.com/) - Open-source platform for simulating, evaluating, tracing, and guardrailing LLM and AI agent applications
 - [Langflow](https://www.langflow.org/desktop/) - Open-source visual builder for designing and running AI agents and workflows, including a desktop app
+- [PlaceCall](https://voygr.tech/placecall/) - AI agent that makes real phone calls to US businesses for reservations, appointments and quotes and returns the outcome, transcript and recording; available as a remote MCP server, REST API and agent skill
