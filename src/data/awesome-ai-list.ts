@@ -1808,6 +1808,14 @@ const AwesomeAI: AwesomeAI[] = [
     source: "https://github.com/langflow-ai/langflow",
     tags: ["opensource", "aiAgentsWorkflows", "pluginsIntegrations"],
   },
+  {
+    title: "Orbi",
+    description: "Open-source (AGPL-3.0) coding agent for GitHub: label an Issue and it implements the change in an isolated worktree, runs tests, opens a PR, and merges after a separate AI review",
+    preview: null,
+    website: "https://orbi.build/?ref=dir-artemshar",
+    source: "https://github.com/orbi-build/orbi",
+    tags: ["opensource", "aiAgentsWorkflows", "versionControl", "codeGeneration"],
+  },
 ];
 
 function sortAwesomeAI() {

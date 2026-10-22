@@ -240,3 +240,4 @@ Add a tool via the **[Submit a tool](https://github.com/artemshar/awesome-ai/iss
 - [AIImageChanger.app](https://aiimagechanger.app/) - Browser-based AI image editor for prompt-driven changes to uploaded photos
 - [Future AGI](https://futureagi.com/) - Open-source platform for simulating, evaluating, tracing, and guardrailing LLM and AI agent applications
 - [Langflow](https://www.langflow.org/desktop/) - Open-source visual builder for designing and running AI agents and workflows, including a desktop app
+- [Orbi](https://orbi.build/?ref=dir-artemshar) - Open-source (AGPL-3.0) coding agent for GitHub: label an Issue and it implements the change in an isolated worktree, runs tests, opens a PR, and merges after a separate AI review
