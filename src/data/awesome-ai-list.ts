@@ -1808,6 +1808,14 @@ const AwesomeAI: AwesomeAI[] = [
     source: "https://github.com/langflow-ai/langflow",
     tags: ["opensource", "aiAgentsWorkflows", "pluginsIntegrations"],
   },
+  {
+    title: "Tera Studio",
+    description: "Learns your singing voice from about a minute of singing, then sings any song you upload back in your voice, in any language",
+    preview: null,
+    website: "https://terastudio.co/",
+    source: null,
+    tags: ["proprietary", "mediaGeneration"],
+  },
 ];
 
 function sortAwesomeAI() {
