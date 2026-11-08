@@ -1808,6 +1808,14 @@ const AwesomeAI: AwesomeAI[] = [
     source: "https://github.com/langflow-ai/langflow",
     tags: ["opensource", "aiAgentsWorkflows", "pluginsIntegrations"],
   },
+  {
+    title: "objekto.io",
+    description: "Turns a few words, a photo or a sketch into a real object: AI designs a print-ready multi-part 3D model with an exploded view and assembly guide, then an industrial workshop 3D prints and delivers it (France only for now)",
+    preview: null,
+    website: "https://objekto.io/en",
+    source: null,
+    tags: ["proprietary", "mediaGeneration"],
+  },
 ];
 
 function sortAwesomeAI() {

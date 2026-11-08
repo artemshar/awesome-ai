@@ -240,3 +240,4 @@ Add a tool via the **[Submit a tool](https://github.com/artemshar/awesome-ai/iss
 - [AIImageChanger.app](https://aiimagechanger.app/) - Browser-based AI image editor for prompt-driven changes to uploaded photos
 - [Future AGI](https://futureagi.com/) - Open-source platform for simulating, evaluating, tracing, and guardrailing LLM and AI agent applications
 - [Langflow](https://www.langflow.org/desktop/) - Open-source visual builder for designing and running AI agents and workflows, including a desktop app
+- [objekto.io](https://objekto.io/en) - Turns a few words, a photo or a sketch into a real object: AI designs a print-ready multi-part 3D model with an exploded view and assembly guide, then an industrial workshop 3D prints and delivers it (France only for now)
