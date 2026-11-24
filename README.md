@@ -240,3 +240,4 @@ Add a tool via the **[Submit a tool](https://github.com/artemshar/awesome-ai/iss
 - [AIImageChanger.app](https://aiimagechanger.app/) - Browser-based AI image editor for prompt-driven changes to uploaded photos
 - [Future AGI](https://futureagi.com/) - Open-source platform for simulating, evaluating, tracing, and guardrailing LLM and AI agent applications
 - [Langflow](https://www.langflow.org/desktop/) - Open-source visual builder for designing and running AI agents and workflows, including a desktop app
+- [Kite](https://kite.new/) - Design tool your AI agents and your team share. Claude, ChatGPT, Cursor or Codex connect through a hosted MCP server and draw editable layers in the same file your team edits live.

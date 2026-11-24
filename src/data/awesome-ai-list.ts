@@ -1808,6 +1808,14 @@ const AwesomeAI: AwesomeAI[] = [
     source: "https://github.com/langflow-ai/langflow",
     tags: ["opensource", "aiAgentsWorkflows", "pluginsIntegrations"],
   },
+  {
+    title: "Kite",
+    description: "Design tool your AI agents and your team share. Claude, ChatGPT, Cursor or Codex connect through a hosted MCP server and draw editable layers in the same file your team edits live.",
+    preview: null,
+    website: "https://kite.new/",
+    source: null,
+    tags: ["proprietary", "appDevelopment", "pluginsIntegrations"],
+  },
 ];
 
 function sortAwesomeAI() {
